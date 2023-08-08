@@ -1,0 +1,9 @@
+/*----------------Page 1 Block 1 Navigation and Background--------------*/
+div.welcome {
+    background-image: url(../assets/images/welcome.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 17/9;
+    padding: 40px 20px 50px 60px;
+    background-color: black;
+}
