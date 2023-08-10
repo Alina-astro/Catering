@@ -1,9 +1,67 @@
 /*----------------Page 1 Block 1 Navigation and Background--------------*/
-div.welcome {
+@font-face {
+    font-family: 'NeueHaasUnica-Light';
+    src: url(../fonts/NeueHaasUnica-Light.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueHaasUnica-Regular';
+    src: url(../fonts/NeueHaasUnica-Regular.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'NeueHaasUnica-Bold';
+    src: url(../fonts/NeueHaasUnica-Bold.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MrsSaintDelafield-Regular';
+    src: url(../fonts/MrsSaintDelafield-Regular.ttf);
+    font-weight: 400;
+}
+
+
+
+.header {
     background-image: url(../assets/images/welcome.png);
     background-repeat: no-repeat;
     background-size: contain;
     aspect-ratio: 17/9;
     padding: 40px 20px 50px 60px;
-    background-color: black;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'NeueHaasUnica-Light', Arial, Helvetica, sans-serif;
+}
+
+.menu__logo {
+    font-family: 'NeueHaasUnica-Bold';
+    font-size: 22px;
+}
+
+.menu__nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu__link {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.slogan__subtitle {
+    font-family: 'MrsSaintDelafield-Regular';
+    font-size: 46px;
+}
+
+.slogan__title {
+    font-size: 48px;
 }
