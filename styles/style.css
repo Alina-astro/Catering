@@ -55,6 +55,22 @@
     font-size: 16px;
     text-decoration: none;
     color: #ffffff;
+    padding: 17px 36px;
+    background-color: #00d664;
+    border-radius: 28px;
+    border: 0px;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu__link:hover {
+    background: #009043;
+}
+
+.menu__link:active {
+    background: #005528;
 }
 
 .slogan__subtitle {
