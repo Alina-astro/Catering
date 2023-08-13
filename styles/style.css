@@ -95,7 +95,6 @@
 
 /*------------------Header Slogan---------*/
 .slogan {
-    border: 1px solid violet;
     margin: 20vh 25vw 0px 25vw;
     text-align: center;
 }
@@ -108,9 +107,19 @@
 .slogan__title {
     font-size: 48px;
     letter-spacing: 3px;
-    margin-top: -20px;
+    margin-top: -40px;
 }
 
 .slogan__text {
-    line-height: 120%;
+    line-height: 140%;
+}
+
+.slogan__button {
+    width: 13vw;
+    height: 6vh;
+    background-color: #00d664;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    margin-top: 5vh;
 }
