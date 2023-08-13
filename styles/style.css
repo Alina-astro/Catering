@@ -34,15 +34,23 @@
     background-repeat: no-repeat;
     background-size: contain;
     aspect-ratio: 17/9;
-    padding: 40px 20px 50px 60px;
+    padding: 40px 20px 50px 20px;
     background-color: #000000;
     color: #ffffff;
     font-family: 'NeueHaasUnica-Light', Arial, Helvetica, sans-serif;
 }
 
+.menu {
+    padding: 0px 14vw;
+    display: grid;
+    grid-template-columns: 8% 1fr 15% 14%;
+    align-items: center;
+
+}
+
 .menu__logo {
     font-family: 'NeueHaasUnica-Bold';
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .menu__nav a {
@@ -51,11 +59,23 @@
     color: #ffffff;
 }
 
+.menu__nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__icons {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 30%;
+}
+
+
 .menu__link {
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     color: #ffffff;
-    padding: 17px 36px;
+    padding: 15px;
     background-color: #00d664;
     border-radius: 28px;
     border: 0px;
@@ -63,6 +83,7 @@
     color: #ffffff;
     text-decoration: none;
     text-align: center;
+    border: 1px solid violet;
 }
 
 .menu__link:hover {
