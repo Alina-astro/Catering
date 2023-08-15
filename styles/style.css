@@ -132,6 +132,7 @@
     color: #696969;
     font-family: 'NeueHaasUnica-Light', Arial, Helvetica, sans-serif;
     font-size: 14px;
+    letter-spacing: 1px;
     text-align: center;
 }
 
@@ -142,6 +143,52 @@
 
 .box-about__title {
     color: #1e266d;
-    font-size: 42px;
+    font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
+    font-size: 34px;
     margin-top: -40px;
+}
+
+.wrap-about {
+    padding: 10vh 15vw;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 10vw;
+}
+
+.wrap-about__desc {
+    display: grid;
+    grid-template-rows: 1fr, repeat(3, 3fr);
+    padding: 10vh 0px;
+    border: 1px solid rgb(166, 130, 238);
+}
+
+.wrap-about__desc h3 {
+    color: #1e266d;
+    font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    justify-self: flex-start;
+    align-self: center;
+    border: 1px solid violet;
+}
+
+.wrap-about__text {
+    border: 1px solid rgb(130, 238, 150);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.wrap-about__text img {
+    grid-row: 1/3;
+    border: 1px solid violet;
+}
+
+.wrap-about__subtitle {
+    border: 1px solid violet;
+    color: #1e266d;
+    font-weight: bolder;
+}
+
+.wrap-about__text p {
+    border: 1px solid violet;
 }
