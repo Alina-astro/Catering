@@ -198,6 +198,15 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 15px;
-    justify-content: center;
-    align-items: center;
+
+}
+
+.wrap-about__img1 {
+    justify-self: end;
+    align-self: flex-end;
+}
+
+.wrap-about__img3 {
+    justify-self: end;
+    align-self: flex-start;
 }
