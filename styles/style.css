@@ -192,3 +192,12 @@
 .wrap-about__text p {
     border: 1px solid violet;
 }
+
+.wrap-about__img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
