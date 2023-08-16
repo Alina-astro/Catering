@@ -125,7 +125,7 @@
     font-size: 14px;
 }
 
-/*------------------About-------------------*/
+/*------------------About (text left)-------------------*/
 
 .box-about {
     background-color: #ffffff;
@@ -149,10 +149,10 @@
 }
 
 .wrap-about {
-    padding: 10vh 15vw;
+    padding: 10vh 16vw;
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    column-gap: 10vw;
+    grid-template-columns: 25vw 36vw;
+    column-gap: 8vw;
 }
 
 .wrap-about__desc {
@@ -193,20 +193,36 @@
     border: 1px solid violet;
 }
 
+/*------------------About (img right)-------------------*/
 .wrap-about__img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 15px;
-
 }
 
 .wrap-about__img1 {
     justify-self: end;
     align-self: flex-end;
+    width: 70%;
 }
+
+.wrap-about__img2 {
+    justify-self: flex-start;
+    align-self: flex-end;
+    width: 95%;
+}
+
 
 .wrap-about__img3 {
     justify-self: end;
     align-self: flex-start;
+    width: 65%;
+    margin-right: -10%;
+}
+
+.wrap-about__img4 {
+    justify-self: center;
+    align-self: flex-start;
+    width: 78%;
 }
