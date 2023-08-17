@@ -303,3 +303,29 @@
 }
 
 /*----------------------Services link-----------------------*/
+.box-services__link {
+    margin-top: 10vh;
+    padding: 10px;
+    background-color: #00d664;
+    border-radius: 28px;
+    border: 0px;
+    cursor: pointer;
+    width: 10vw;
+    margin-left: 28vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-services__link img {
+    width: 85%;
+    height: 80%;
+}
+
+.box-services__link:hover {
+    background: #009043;
+}
+
+.box-services__link:active {
+    background: #005528;
+}
