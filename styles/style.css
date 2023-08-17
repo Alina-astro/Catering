@@ -226,11 +226,9 @@
 /*----------------------Services-------------------------*/
 .box-services {
     background-color: #f7f4fb;
-    font-family: 'NeueHaasUnica-Light', Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    color: #696969;
     text-align: center;
     padding: 18vh 16vw;
+
 }
 
 .box-services__title {
@@ -242,6 +240,7 @@
 .wrap-services {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .wrap-services__container {
@@ -253,10 +252,12 @@
     margin-top: 8vh;
     display: grid;
     grid-template-rows: 2fr 1fr 1.5fr 1.4fr;
+    z-index: 1;
 }
 
 .wrap-services__container div {
     padding: 0px 15px;
+
 }
 
 .wrap-services__img {
@@ -274,15 +275,31 @@
     font-size: 14px;
 }
 
+.wrap-services__text {
+    font-family: 'NeueHaasUnica-Light', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #696969;
+}
+
 .wrap-services__link {
     align-self: flex-start;
 }
 
 .wrap-services__link a {
     font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
+    font-size: 11px;
     color: #00d664;
     text-decoration: none;
     font-weight: bolder;
 }
 
-/*----------------------Services-------------------------*/
+/*----------------------Services img-----------------------*/
+.box-services__pic img {
+    width: 10vw;
+    position: absolute;
+    margin-top: -9%;
+    margin-left: 27%;
+    z-index: 0;
+}
+
+/*----------------------Services link-----------------------*/
