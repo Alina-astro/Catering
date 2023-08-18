@@ -345,4 +345,12 @@
     background-color: #000000;
     color: #ffffff;
     font-family: 'NeueHaasUnica-Light', Arial, Helvetica, sans-serif;
+
+}
+
+.box-kitchen__title {
+    font-size: 28px;
+    text-align: center;
+    padding: 3vh 28vw 0px 28vw;
+    line-height: 130%;
 }
