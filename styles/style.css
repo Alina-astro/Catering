@@ -333,3 +333,16 @@
 .box-services__link:active {
     background: #005528;
 }
+
+/*----------------------Cuisine-----------------------*/
+
+.box-kitchen {
+    background-image: url(../assets/images/menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 17/7;
+    padding: 40px 20px 30px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'NeueHaasUnica-Light', Arial, Helvetica, sans-serif;
+}
