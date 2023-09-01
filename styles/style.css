@@ -334,7 +334,7 @@
     background: #005528;
 }
 
-/*----------------------Cuisine-----------------------*/
+/*----------------------Kitchen-----------------------*/
 
 .box-kitchen {
     background-image: url(../assets/images/menu.png);
@@ -353,4 +353,15 @@
     text-align: center;
     padding: 3vh 28vw 0px 28vw;
     line-height: 130%;
+}
+
+/*----------------------Video-----------------------*/
+.box-video {
+    width: 100vw;
+    height: 60vh;
+    background-color: #f5f6fe;
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    justify-content: space-around;
+    align-items: center;
 }
