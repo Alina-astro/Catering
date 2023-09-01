@@ -362,6 +362,17 @@
     background-color: #f5f6fe;
     display: grid;
     grid-template-columns: repeat(2, 30%);
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.box-video__video {
+    border: 1px solid violet;
+
+}
+
+.box-video__text {
+    border: 1px solid violet;
+
 }
