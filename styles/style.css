@@ -27,14 +27,46 @@
     font-weight: 400;
 }
 
+/*-----------------------All Link Button--------------*/
+.button-link {
+    font-family: 'NeueHaasUnica-Light', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    background-color: #00d664;
+    border-radius: 28px;
+    border: 0px;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button-link:hover {
+    background: #009043;
+}
+
+.button-link:active {
+    background: #005528;
+}
+
+/*-----------------------All Title h2------------------*/
+
+.title-h2 {
+    font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #1e266d;
+}
 
 
+/*--------------------Header Navigation----------------------*/
 .header {
     background-image: url(../assets/images/welcome.png);
     background-repeat: no-repeat;
     background-size: contain;
     aspect-ratio: 17/9;
-    padding: 40px 20px 30px 20px;
+    padding: 30px 20px 30px 20px;
     background-color: #000000;
     color: #ffffff;
     font-family: 'NeueHaasUnica-Light', Arial, Helvetica, sans-serif;
@@ -71,29 +103,7 @@
 }
 
 
-.menu__link {
-    font-size: 14px;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 15px;
-    background-color: #00d664;
-    border-radius: 28px;
-    border: 0px;
-    cursor: pointer;
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
-}
-
-.menu__link:hover {
-    background: #009043;
-}
-
-.menu__link:active {
-    background: #005528;
-}
-
-/*------------------Header Slogan---------*/
+/*--------------------------Header Slogan-------------------*/
 .slogan {
     margin: 20vh 25vw 0px 25vw;
     text-align: center;
@@ -111,21 +121,12 @@
 }
 
 .slogan__text {
-    line-height: 140%;
+    letter-spacing: 1px;
+    margin-bottom: 8vh;
 }
 
-.slogan__button {
-    width: 13vw;
-    height: 6vh;
-    background-color: #00d664;
-    color: #ffffff;
-    border: none;
-    border-radius: 30px;
-    margin-top: 5vh;
-    font-size: 14px;
-}
 
-/*------------------About-----------------------------*/
+/*--------------------------------About-----------------------------*/
 
 .box-about {
     background-color: #ffffff;
@@ -148,7 +149,7 @@
     margin-top: -40px;
 }
 
-/*------------------About (text left)-------------------*/
+/*----------------------About (text left)-----------------------------*/
 .wrap-about {
     padding: 10vh 16vw;
     display: grid;
@@ -189,7 +190,7 @@
     margin-top: 0px;
 }
 
-/*------------------About (img right)-------------------*/
+/*--------------------------About (img right)--------------------------*/
 .wrap-about__img {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -223,17 +224,11 @@
     width: 78%;
 }
 
-/*----------------------Services-------------------------*/
+/*----------------------------Services----------------------------------*/
 .box-services {
     background-color: #f7f4fb;
     text-align: center;
     padding: 18vh 16vw;
-}
-
-.box-services__title {
-    color: #1e266d;
-    font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
-    font-size: 28px;
 }
 
 .wrap-services {
@@ -310,29 +305,6 @@
 
 }
 
-/*----------------------Services link-----------------------*/
-.box-services__link {
-
-    padding: 15px 25px;
-    background-color: #00d664;
-    color: #ffffff;
-    border-radius: 28px;
-    border: 0px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
-    font-size: 14px;
-}
-
-
-.box-services__link:hover {
-    background: #009043;
-}
-
-.box-services__link:active {
-    background: #005528;
-}
 
 /*----------------------Kitchen-----------------------*/
 
@@ -349,7 +321,7 @@
 }
 
 .box-kitchen__title {
-    font-size: 28px;
+    color: #ffffff;
     text-align: center;
     padding: 3vh 28vw 0px 28vw;
     line-height: 130%;
