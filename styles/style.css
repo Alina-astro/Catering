@@ -55,7 +55,7 @@
 
 .title-h2 {
     font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 26px;
     color: #1e266d;
 }
 
@@ -327,6 +327,8 @@
     line-height: 130%;
 }
 
+
+
 /*----------------------Video-----------------------*/
 .box-video {
     padding: 5vh 16vw;
@@ -336,18 +338,11 @@
     grid-template-columns: 1.4fr 1fr;
     justify-content: center;
     align-content: center;
-    gap: 10px;
+    gap: 5px;
 }
 
-.box-video__video {
-    background-image: url(../assets/images/img-for-video.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 45vh;
-}
-
-.box-video__video iframe {
-    display: none;
+.box-video__video>a>img {
+    width: 80%;
 }
 
 .box-video__text p {
@@ -358,3 +353,9 @@
     line-height: 160%;
     margin-bottom: 8vh;
 }
+
+.box-video__text {
+    align-self: center;
+}
+
+/*---------------------------------------------------------*/
