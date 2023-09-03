@@ -317,17 +317,40 @@
     background-color: #000000;
     color: #ffffff;
     font-family: 'NeueHaasUnica-Light', Arial, Helvetica, sans-serif;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
 }
 
 .box-kitchen__title {
     color: #ffffff;
     text-align: center;
-    padding: 3vh 28vw 0px 28vw;
+    padding: 0px 28vw;
     line-height: 130%;
 }
 
+.box-kitchen__menu {
+    width: 68%;
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 10px;
 
+}
+
+.box-kitchen__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 16%;
+    border: 1px solid violet;
+    color: #777777;
+    font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 20%;
+}
 
 /*----------------------Video-----------------------*/
 .box-video {
