@@ -352,6 +352,23 @@
     padding: 0 20%;
 }
 
+/*-----------------Kitchen Menu------------------*/
+.box-kitchen__price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box-kitchen__row {
+    display: grid;
+    grid-template-columns: 10% 70% 10%;
+}
+
+.box-kitchen__img img {
+    width: 100%;
+}
+
+.box-kitchen__text
+
 /*----------------------Video-----------------------*/
 .box-video {
     padding: 5vh 16vw;
