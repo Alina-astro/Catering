@@ -437,4 +437,23 @@
     align-self: center;
 }
 
-/*---------------------------------------------------------*/
+/*---------------------------Online Store------------------------------*/
+.box-online {
+    padding: 8vh 12vw;
+}
+
+.box-online__title {
+    padding: 2vh 20vw;
+    text-align: center;
+}
+
+.box-online__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.box-online__card img {
+    width: 100%;
+}
