@@ -344,30 +344,55 @@
     justify-content: space-around;
     align-items: center;
     height: 16%;
-    border: 1px solid violet;
     color: #777777;
     font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 500;
     padding: 0 20%;
+    border: 1px solid violet;
 }
 
 /*-----------------Kitchen Menu------------------*/
 .box-kitchen__price {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 20px 30px;
 }
 
 .box-kitchen__row {
     display: grid;
-    grid-template-columns: 10% 70% 10%;
+    grid-template-columns: 12% 70% 10%;
+    gap: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(153, 238, 130);
 }
 
 .box-kitchen__img img {
     width: 100%;
 }
 
-.box-kitchen__text
+.box-kitchen__text {
+    color: #696969;
+    font-family: 'NeueHaasUnica-Light', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: -12px;
+}
+
+.box-kitchen__name {
+    color: #1e266d;
+    font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.box-kitchen__value {
+    color: #000000;
+    font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: -12px;
+    border: 1px solid rgb(153, 238, 130);
+}
 
 /*----------------------Video-----------------------*/
 .box-video {
@@ -379,6 +404,7 @@
     justify-content: center;
     align-content: center;
     gap: 5px;
+
 }
 
 .box-video__video>a>img {
