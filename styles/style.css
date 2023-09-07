@@ -457,3 +457,8 @@
 .box-online__card img {
     width: 100%;
 }
+
+.box-online__link {
+    margin-top: 10vh;
+    text-align: center;
+}
