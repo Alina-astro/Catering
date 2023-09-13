@@ -500,10 +500,11 @@
 /*---------------------------Comments------------------------------*/
 .box-comment {
     border: 1px solid violet;
+    padding: 10vh 12vw;
 }
 
 .box-comment__wrap {
-    padding: 10vh 12vw;
+
     display: flex;
     justify-content: space-around;
     gap: 2vw;
@@ -573,4 +574,9 @@
 
 .box-comment__points {
     text-align: center;
+    padding: 4vh 0px;
+}
+
+.box-comment__points img {
+    width: 8%;
 }
