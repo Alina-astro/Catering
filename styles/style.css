@@ -581,3 +581,30 @@
 }
 
 /*---------------------------Subscribe------------------------------*/
+.border {
+    border-top: 1px solid #6969691a;
+    height: 20px;
+    margin: 0px 17vw;
+}
+
+.box-sub {
+    padding: 10vh 16vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box-sub__text {
+    width: 21vw;
+    color: #39374d;
+    font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 130%;
+    letter-spacing: 0.3px;
+}
+
+.box-sub__enter {
+    border: 1px solid violet;
+}
