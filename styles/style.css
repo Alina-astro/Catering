@@ -499,8 +499,7 @@
 
 /*---------------------------Comments------------------------------*/
 .box-comment {
-    border: 1px solid violet;
-    padding: 10vh 12vw;
+    padding: 8vh 12vw;
 }
 
 .box-comment__wrap {
@@ -580,3 +579,5 @@
 .box-comment__points img {
     width: 8%;
 }
+
+/*---------------------------Subscribe------------------------------*/
