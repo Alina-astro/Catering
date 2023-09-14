@@ -608,3 +608,20 @@
 .box-sub__enter {
     border: 1px solid violet;
 }
+
+.box-sub__email {
+    width: 70%;
+    padding: 12px;
+    background-color: #edfcf4;
+    border: 1px solid #f3f3f3;
+    border-radius: 30px;
+    font-family: 'NeueHaasUnica-Regular', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #1e266d;
+    outline: none;
+
+}
+
+.box-sub__email::placeholder {
+    color: #1e266d;
+}
