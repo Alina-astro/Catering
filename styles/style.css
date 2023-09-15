@@ -648,3 +648,27 @@
 input.box-sub__checkbox {
     margin-right: 6px;
 }
+
+/*---------------------------Map------------------------------------*/
+.box-map {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.box-map__container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.box-map__img {
+    box-sizing: border-box;
+    padding: 20px 5px;
+    width: 100vw;
+}
+
+.box-map__img img {
+    width: 100%;
+    text-align: center;
+}
+
+/*---------------------------Map------------------------------------*/
