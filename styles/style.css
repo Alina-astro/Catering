@@ -27,6 +27,18 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../fonts/Roboto-Light.ttf);
+    font-weight: 400;
+}
+
 /*-----------------------All Link Button--------------*/
 .button-link {
     font-family: 'NeueHaasUnica-Light', Arial, Helvetica, sans-serif;
@@ -672,7 +684,33 @@ input.box-sub__checkbox {
 }
 
 /*---------------------------Footer Nav------------------------------------*/
+.footer {
+    box-sizing: border-box;
+    padding: 6vh 16vw;
+}
 
+.footer__wrap-navigation {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #3633451a;
+    height: 6vh;
+}
+
+.footer__nav {
+    border: 1px solid violet;
+}
+
+.footer__socials {
+    border: 1px solid violet;
+}
+
+
+.footer__nav a {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #696969;
+}
 
 
 /*---------------------------Footer Grid-----------------------------------*/
@@ -689,6 +727,13 @@ input.box-sub__checkbox {
 .footer__list {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+}
+
+.footer__list a {
+    font-family: 'Roboto-Regular', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #696969;
 }
 
 .footer__text {
