@@ -723,11 +723,12 @@ input.box-sub__checkbox {
 .footer__wrap-grid {
     display: grid;
     grid-template-columns: 5fr 1fr;
+    border-bottom: 1px solid #3633451a;
 }
 
 .footer__wrap-grid h3 {
     font-family: 'FuturaPT-Regular', Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     color: #696969;
 }
@@ -737,9 +738,17 @@ input.box-sub__checkbox {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.footer__menu {
+    height: 25vh;
+    align-content: space-between;
+}
+
 .footer__list {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+    height: 15vh;
+    align-content: space-between;
+
 }
 
 .footer__list a {
@@ -753,6 +762,7 @@ input.box-sub__checkbox {
     font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
     font-size: 12px;
     letter-spacing: 0.8px;
+    line-height: 140%;
     color: #696969;
 }
 
