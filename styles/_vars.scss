@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "MrsSaintDelafield";
+  src: url(../fonts/MrsSaintDelafield-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto.ttf);
+}
+
+@font-face {
+  font-family: "NeueHaasUnica-Black";
+  src: url(../fonts/NeueHaasUnica-Black.ttf);
+}
+@font-face {
+  font-family: "NeueHaasUnica-Bold";
+  src: url(../fonts/NeueHaasUnica-Bold.ttf);
+}
+
+@font-face {
+  font-family: "NeueHaasUnica-Regular";
+  src: url(../fonts/NeueHaasUnica-Regular.ttf);
+}
+
+@font-face {
+  font-family: "NeueHaasUnica-Light";
+  src: url(../fonts/NeueHaasUnica-Light.ttf);
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FuturaPT-Book.ttf);
+}
+
+$font-main-black: "NeueHaasUnica-Black";
+$font-main-bold: "NeueHaasUnica-Bold";
+$font-main-reg: "NeueHaasUnica-Regular";
+$font-main-light: "NeueHaasUnica-Light";
+$font-coursive: "MrsSaintDelafield";
+$font-footer: "Roboto";
+$font-footer-title: "Futura PT";
+
+$color-text-white: #ffffff;
+$color-btn: #00d664;
+$color-btn-hover: #009043;
+$color-btn-active: #005528;
+$color-bg: #000000;
+
+$padding-block: 35px 16vw;
+
+%button-link {
+  font-family: $font-main-reg;
+  font-size: 13px;
+  text-decoration: none;
+  text-align: center;
+  color: $color-text-white;
+  background-color: $color-btn;
+  padding: 15px 30px;
+  border-radius: 28px;
+  border: 0px;
+  cursor: pointer;
+}
+
+%button-link:hover {
+  background: #009043;
+}
+
+%button-link:active {
+  background: #005528;
+}

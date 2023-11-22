@@ -1,114 +1,130 @@
-/*----------------Page 1 Block 1 Navigation and Background--------------*/
 @font-face {
-  font-family: "NeueHaasUnica-Light";
-  src: url(../fonts/NeueHaasUnica-Light.ttf);
-  font-weight: 400;
-  font-style: normal;
+  font-family: "MrsSaintDelafield";
+  src: url(../fonts/MrsSaintDelafield-Regular.ttf);
 }
 @font-face {
-  font-family: "NeueHaasUnica-Regular";
-  src: url(../fonts/NeueHaasUnica-Regular.ttf);
-  font-weight: 500;
-  font-style: normal;
+  font-family: "Roboto";
+  src: url(../fonts/Roboto.ttf);
+}
+@font-face {
+  font-family: "NeueHaasUnica-Black";
+  src: url(../fonts/NeueHaasUnica-Black.ttf);
 }
 @font-face {
   font-family: "NeueHaasUnica-Bold";
   src: url(../fonts/NeueHaasUnica-Bold.ttf);
-  font-weight: 900;
-  font-style: normal;
 }
 @font-face {
-  font-family: "MrsSaintDelafield-Regular";
-  src: url(../fonts/MrsSaintDelafield-Regular.ttf);
-  font-weight: 400;
+  font-family: "NeueHaasUnica-Regular";
+  src: url(../fonts/NeueHaasUnica-Regular.ttf);
 }
 @font-face {
-  font-family: "Roboto-Regular";
-  src: url(../fonts/Roboto-Regular.ttf);
-  font-weight: 500;
+  font-family: "NeueHaasUnica-Light";
+  src: url(../fonts/NeueHaasUnica-Light.ttf);
 }
 @font-face {
-  font-family: "Roboto-Light";
-  src: url(../fonts/Roboto-Light.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "FuturaPT-Regular";
+  font-family: "Futura PT";
   src: url(../fonts/FuturaPT-Book.ttf);
-  font-weight: 500;
 }
-/*-----------------------All Link Button--------------*/
-.button-link {
-  font-family: "NeueHaasUnica-Light", Arial, Helvetica, sans-serif;
+.header .menu .menu__button a {
+  font-family: "NeueHaasUnica-Regular";
   font-size: 13px;
   text-decoration: none;
+  text-align: center;
   color: #ffffff;
-  padding: 15px 30px;
   background-color: #00d664;
+  padding: 15px 30px;
   border-radius: 28px;
   border: 0px;
   cursor: pointer;
-  color: #ffffff;
-  text-decoration: none;
-  text-align: center;
 }
 
-.button-link:hover {
+.header .menu .menu__button a:hover {
   background: #009043;
 }
 
-.button-link:active {
+.header .menu .menu__button a:active {
   background: #005528;
 }
 
-/*-----------------------All Title h2------------------*/
-.title-h2 {
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 26px;
-  color: #1e266d;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*--------------------Header Navigation----------------------*/
+body {
+  max-width: 1920px;
+  min-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .header {
   background-image: url(../assets/images/welcome.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  aspect-ratio: 17/9;
-  padding: 30px 20px 30px 20px;
+  background-size: cover;
+  height: 100vh;
+  padding: 35px 16vw;
   background-color: #000000;
   color: #ffffff;
-  font-family: "NeueHaasUnica-Light", Arial, Helvetica, sans-serif;
 }
-
-.menu {
-  padding: 0px 14vw;
-  display: grid;
-  grid-template-columns: 8% 1fr 15% 14%;
+.header .menu {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-
-.menu__logo {
+.header .menu .menu__logo {
   font-family: "NeueHaasUnica-Bold";
-  font-size: 20px;
+  font-size: 22px;
+  letter-spacing: 2px;
 }
-
-.menu__nav a {
+.header .menu .menu__nav {
+  font-family: "NeueHaasUnica-Light";
   font-size: 16px;
-  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+}
+.header .menu .menu__nav .nav__dropdown {
+  position: relative;
+  display: inline-block;
+}
+.header .menu .menu__nav .nav__dropdown .dropdown-link {
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+.header .menu .menu__nav .nav__dropdown .dropdown-link img {
+  height: 8px;
+}
+.header .menu .menu__nav .nav__dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(101, 100, 100, 0.4941176471);
+  width: 100%;
+  z-index: 1;
+}
+.header .menu .menu__nav .nav__dropdown .dropdown-content a {
   color: #ffffff;
+  padding: 12px 8px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
 }
-
-.menu__nav {
+.header .menu .menu__nav .nav__dropdown .dropdown-content a:hover {
+  background-color: rgba(135, 135, 135, 0.5215686275);
+}
+.header .menu .menu__nav .nav__dropdown:hover .dropdown-content {
+  display: block;
+}
+.header .menu .menu__nav .nav__dropdown:hover .dropdown-link {
+  background-color: rgba(101, 100, 100, 0.4941176471);
+}
+.header .menu .menu__icons {
+  width: 6vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-
-.menu__icons {
-  display: flex;
-  justify-content: space-around;
-  padding-right: 30%;
-}
-
 /*--------------------------Header Slogan-------------------*/
 .slogan {
   margin: 20vh 25vw 0px 25vw;
