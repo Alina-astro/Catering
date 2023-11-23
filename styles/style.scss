@@ -114,100 +114,113 @@ body {
 }
 
 /*--------------------------------About-----------------------------*/
-
-.box-about {
-  background-color: #ffffff;
-  color: #696969;
-  font-family: "NeueHaasUnica-Light", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-.box-about__subtitle {
-  font-family: "MrsSaintDelafield-Regular";
-  font-size: 46px;
-}
-
-.box-about__title {
-  color: #1e266d;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 32px;
-  margin-top: -40px;
-}
-
-/*----------------------About (text left)-----------------------------*/
-.wrap-about {
-  padding: 10vh 16vw;
-  display: grid;
-  grid-template-columns: 25vw 36vw;
-  column-gap: 5vw;
-}
-
-.wrap-about__desc {
-  display: grid;
-  grid-template-rows: 1fr, repeat(3, 3fr);
-  padding: 10vh 0px;
-  row-gap: 15px;
-}
-
-.wrap-about__desc h3 {
-  color: #1e266d;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  text-align: left;
-  align-self: center;
-}
-
-.wrap-about__text {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 2fr;
-  text-align: left;
-}
-
-.wrap-about__text img {
-  grid-row: 1/3;
-}
-
-.wrap-about__subtitle {
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  color: #1e266d;
-  margin-top: 0px;
-}
-
-/*--------------------------About (img right)--------------------------*/
-.wrap-about__img {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 15px;
-}
-
-.wrap-about__img1 {
-  justify-self: end;
-  align-self: flex-end;
-  width: 70%;
-}
-
-.wrap-about__img2 {
-  justify-self: flex-start;
-  align-self: flex-end;
-  width: 95%;
-}
-
-.wrap-about__img3 {
-  justify-self: end;
-  align-self: flex-start;
-  width: 65%;
-  margin-right: -10%;
-}
-
-.wrap-about__img4 {
-  justify-self: center;
-  align-self: flex-start;
-  width: 78%;
+.container-about {
+  padding: $padding-block;
+  .container-about__title {
+    padding: 8vh;
+    text-align: center;
+    .box-about__subtitle {
+      font-family: $font-coursive;
+      font-size: 50px;
+      color: $color-text-grey-light;
+    }
+    .box-about__title {
+      font-family: $font-main-reg;
+      font-size: 36px;
+      color: $color-text-blu;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .box-about__text {
+      font-family: $font-main-light;
+      font-size: 14px;
+      color: $color-text-grey;
+      letter-spacing: 1px;
+      line-height: 150%;
+    }
+  }
+  .container-about__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .box__desc {
+      flex-basis: 36%;
+      .desc__subtitle {
+        font-family: $font-main-reg;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        line-height: 130%;
+        color: $color-text-blu;
+      }
+      .desc__wrap {
+        margin-top: 30px;
+        display: flex;
+        gap: 20px;
+        .desc__icon {
+          flex-basis: 12%;
+          img {
+            width: 100%;
+          }
+        }
+        .desc__text {
+          flex-grow: 1;
+          .desc__text_bold {
+            font-family: $font-main-reg;
+            font-size: 16px;
+            color: $color-text-blu;
+            margin-bottom: 10px;
+          }
+          .desc__text_light {
+            font-family: $font-main-light;
+            font-size: 14px;
+            color: $color-text-grey;
+            line-height: 140%;
+          }
+        }
+      }
+    }
+    .box__img {
+      flex-basis: 45%;
+      padding: 15px;
+      display: grid;
+      grid-template-columns: 1fr 10px 1.2fr;
+      grid-template-rows: 1.2fr 1fr;
+      gap: 15px;
+      .img_l-top {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: flex-end;
+        img {
+          width: 100%;
+        }
+      }
+      .img_r-top {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        align-self: flex-end;
+        img {
+          width: 100%;
+        }
+      }
+      .img_l-bot {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        img {
+          width: 70%;
+        }
+      }
+      .img_r-bot {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
 }
 
 /*----------------------------Services----------------------------------*/
