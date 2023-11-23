@@ -26,7 +26,7 @@
   font-family: "Futura PT";
   src: url(../fonts/FuturaPT-Book.ttf);
 }
-.header .menu .menu__button a {
+.slogan .slogan__button a, .header .menu .menu__button a {
   font-family: "NeueHaasUnica-Regular";
   font-size: 13px;
   text-decoration: none;
@@ -39,11 +39,11 @@
   cursor: pointer;
 }
 
-.header .menu .menu__button a:hover {
+.slogan .slogan__button a:hover, .header .menu .menu__button a:hover {
   background: #009043;
 }
 
-.header .menu .menu__button a:active {
+.slogan .slogan__button a:active, .header .menu .menu__button a:active {
   background: #005528;
 }
 
@@ -125,28 +125,28 @@ body {
   display: flex;
   justify-content: space-between;
 }
-/*--------------------------Header Slogan-------------------*/
 .slogan {
-  margin: 20vh 25vw 0px 25vw;
+  margin: 26vh 12vw 0px 12vw;
   text-align: center;
 }
-
-.slogan__subtitle {
-  font-family: "MrsSaintDelafield-Regular";
+.slogan .slogan__subtitle {
+  font-family: "MrsSaintDelafield";
+  font-size: 50px;
+}
+.slogan .slogan__title {
+  font-family: "NeueHaasUnica-Regular";
   font-size: 46px;
+  letter-spacing: 2px;
+  margin-top: 0;
 }
-
-.slogan__title {
-  font-size: 48px;
-  letter-spacing: 3px;
-  margin-top: -40px;
-}
-
-.slogan__text {
+.slogan .slogan__text {
+  font-family: "NeueHaasUnica-Light";
+  font-size: 15px;
   letter-spacing: 1px;
-  margin-bottom: 8vh;
 }
-
+.slogan .slogan__button {
+  margin-top: 8vh;
+}
 /*--------------------------------About-----------------------------*/
 .box-about {
   background-color: #ffffff;

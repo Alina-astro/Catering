@@ -86,26 +86,31 @@ body {
   }
 }
 
-/*--------------------------Header Slogan-------------------*/
+//-------------------------------------------------------Header Slogan
 .slogan {
-  margin: 20vh 25vw 0px 25vw;
+  margin: 26vh 12vw 0px 12vw;
   text-align: center;
-}
-
-.slogan__subtitle {
-  font-family: "MrsSaintDelafield-Regular";
-  font-size: 46px;
-}
-
-.slogan__title {
-  font-size: 48px;
-  letter-spacing: 3px;
-  margin-top: -40px;
-}
-
-.slogan__text {
-  letter-spacing: 1px;
-  margin-bottom: 8vh;
+  .slogan__subtitle {
+    font-family: $font-coursive;
+    font-size: 50px;
+  }
+  .slogan__title {
+    font-family: $font-main-reg;
+    font-size: 46px;
+    letter-spacing: 2px;
+    margin-top: 0;
+  }
+  .slogan__text {
+    font-family: $font-main-light;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .slogan__button {
+    margin-top: 8vh;
+    a {
+      @extend %button-link;
+    }
+  }
 }
 
 /*--------------------------------About-----------------------------*/
