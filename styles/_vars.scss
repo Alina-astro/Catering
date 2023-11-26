@@ -71,3 +71,9 @@ $padding-block: 35px 16vw;
 %button-link:active {
   background: #005528;
 }
+
+@mixin title-h2($color) {
+  font-family: $font-main-reg;
+  font-size: 26px;
+  color: $color;
+}

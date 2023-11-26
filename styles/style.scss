@@ -15,7 +15,7 @@ body {
 
 //------------------------------------------------------------Header Navigation
 .header {
-  background-image: url(../assets/images/welcome.png);
+  background-image: url(../assets/images/bg-header.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -113,7 +113,7 @@ body {
   }
 }
 
-/*--------------------------------About-----------------------------*/
+//---------------------------------------------------------About
 .container-about {
   padding: $padding-block;
   .container-about__title {
@@ -125,9 +125,8 @@ body {
       color: $color-text-grey-light;
     }
     .box-about__title {
-      font-family: $font-main-reg;
+      @include title-h2($color-text-blu);
       font-size: 36px;
-      color: $color-text-blu;
       margin-top: 10px;
       margin-bottom: 20px;
     }
@@ -223,184 +222,257 @@ body {
   }
 }
 
-/*----------------------------Services----------------------------------*/
-.box-services {
+//------------------------------------------------------Services
+.container-services {
   background-color: #f7f4fb;
   text-align: center;
-  padding: 18vh 16vw;
+  padding: $padding-block;
+  padding-top: 18vh;
+  padding-bottom: 10vh;
+  .container-services__title {
+    @include title-h2($color-text-blu);
+  }
+  .container-services__wrap {
+    margin: 8vh 0 8vh 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .container-services__box {
+      background-color: #ffffff;
+      box-shadow: 0px 10px 60px 0px #0000001a;
+      border-radius: 5px;
+      width: 16vw;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      z-index: 1;
+      .container-services__icon {
+        width: 21%;
+        img {
+          width: 100%;
+        }
+      }
+      .container-services__subtitle {
+        font-family: $font-main-reg;
+        color: $color-text-blu;
+        font-size: 16px;
+      }
+      .container-services__text {
+        font-family: $font-main-light;
+        color: $color-text-grey;
+        font-size: 12px;
+        line-height: 140%;
+      }
+      .container-services__link {
+        a {
+          text-decoration: none;
+          font-family: $font-main-reg;
+          color: $color-btn;
+          font-size: 12px;
+          line-height: 140%;
+        }
+      }
+    }
+    .container-services__icon-points {
+      position: absolute;
+      z-index: 0;
+      width: 8vw;
+      top: 13.5vh;
+      left: 62.5vw;
+    }
+  }
+  .container-services__button {
+    a {
+      @extend %button-link;
+      img {
+        width: 8px;
+      }
+    }
+  }
 }
 
-.wrap-services {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin-bottom: 10vh;
-}
+//---------------------------------------------------------Kitchen
 
-.wrap-services__container {
-  background-color: #ffffff;
-  border-radius: 5px;
-  width: 16vw;
-  aspect-ratio: 1/1;
-  box-shadow: 0px 10px 60px 0px #0000001a;
-  margin-top: 8vh;
-  display: grid;
-  grid-template-rows: 2fr 1fr 1.5fr 1.4fr;
-  z-index: 1;
-}
-
-.wrap-services__container div {
-  padding: 0px 15px;
-}
-
-.wrap-services__img {
-  align-self: flex-end;
-}
-
-.wrap-services__img img {
-  width: 20%;
-}
-
-.wrap-services__subtitle {
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  color: #1e266d;
-  font-size: 14px;
-}
-
-.wrap-services__text {
-  font-family: "NeueHaasUnica-Light", Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  color: #696969;
-}
-
-.wrap-services__link {
-  align-self: flex-start;
-}
-
-.wrap-services__link a {
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  color: #00d664;
-  text-decoration: none;
-  font-weight: bolder;
-}
-
-.wrap-services__link a:hover {
-  text-decoration: underline;
-}
-
-.wrap-services__link a:active {
-  color: #009043;
-}
-
-/*----------------------Services img-----------------------*/
-.box-services__pic {
-  width: 10vw;
-  position: absolute;
-  margin-top: 16.5%;
-  margin-left: 90%;
-  z-index: 0;
-}
-
-/*----------------------Kitchen-----------------------*/
-
-.box-kitchen {
-  background-image: url(../assets/images/menu.png);
+.container-kitchen {
+  width: 100vw;
+  height: 82vh;
+  background-image: url(../assets/images/bg-kitchen.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  aspect-ratio: 17/7;
-  padding: 40px 20px 30px 20px;
-  background-color: #000000;
-  color: #ffffff;
-  font-family: "NeueHaasUnica-Light", Arial, Helvetica, sans-serif;
+  background-size: cover;
+  padding: $padding-block;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4vh;
+  .container-kitchen__title {
+    @include title-h2($color-text-white);
+    width: 60%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .container-kitchen__wrap {
+    width: 100%;
+    .container-kitchen__menu {
+      background-color: $color-text-white;
+      border-radius: 10px;
+      width: 100%;
+      padding: 150px 100px 70px 100px;
+      .menu__wrap {
+        display: flex;
+        justify-content: space-between;
+        .menu__list {
+          flex-basis: 48%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 10px;
+          .menu__item {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            .menu__img {
+              flex-basis: 50px;
+              img {
+                width: 100%;
+              }
+            }
+            .menu__desc {
+              flex-grow: 1;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              .menu__name {
+                display: flex;
+                justify-content: space-between;
+                p {
+                  font-family: $font-main-reg;
+                  font-size: 16px;
+                  color: $color-text-blu;
+                }
+                .menu__line {
+                  flex-grow: 1;
+                  border-bottom: 1px dotted $color-text-grey;
+                  height: 16px;
+                }
+                .menu__price {
+                  font-family: $font-main-light;
+                  font-size: 16px;
+                  color: $color-bg;
+                  margin-left: 10px;
+                }
+              }
+              .menu__comment {
+                font-family: $font-footer;
+                font-size: 12px;
+                color: $color-text-grey;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-.box-kitchen__title {
-  color: #ffffff;
-  text-align: center;
-  padding: 0px 28vw;
-  line-height: 130%;
-}
+// .box-kitchen {
+//   background-image: url(../assets/images/menu.png);
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   aspect-ratio: 17/7;
+//   padding: 40px 20px 30px 20px;
+//   background-color: #000000;
+//   color: #ffffff;
+//   font-family: "NeueHaasUnica-Light", Arial, Helvetica, sans-serif;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 4vh;
+// }
 
-.box-kitchen__menu {
-  width: 68%;
-  height: 60%;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
+// .box-kitchen__title {
+//   color: #ffffff;
+//   text-align: center;
+//   padding: 0px 28vw;
+//   line-height: 130%;
+// }
 
-.box-kitchen__nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 16%;
-  color: #777777;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 0 20%;
-  border: 1px solid violet;
-}
+// .box-kitchen__menu {
+//   width: 68%;
+//   height: 60%;
+//   background-color: #ffffff;
+//   border-radius: 10px;
+// }
+
+// .box-kitchen__nav {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   height: 16%;
+//   color: #777777;
+//   font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
+//   font-size: 12px;
+//   font-weight: 500;
+//   padding: 0 20%;
+//   border: 1px solid violet;
+// }
 
 /*-----------------Kitchen Menu------------------*/
-.box-kitchen__price {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px 30px;
-}
+// .box-kitchen__price {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   padding: 20px 30px;
+// }
 
-.box-kitchen__row {
-  display: grid;
-  grid-template-columns: 12% 1fr 1fr 10%;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  justify-content: flex-start;
-  margin-bottom: 10px;
-}
+// .box-kitchen__row {
+//   display: grid;
+//   grid-template-columns: 12% 1fr 1fr 10%;
+//   grid-template-rows: 1fr 1fr;
+//   gap: 10px;
+//   justify-content: flex-start;
+//   margin-bottom: 10px;
+// }
 
-.box-kitchen__img {
-  grid-row: 1/3;
-  border: 1px solid violet;
-}
+// .box-kitchen__img {
+//   grid-row: 1/3;
+//   border: 1px solid violet;
+// }
 
-.box-kitchen__img img {
-  width: 100%;
-}
+// .box-kitchen__img img {
+//   width: 100%;
+// }
 
-.box-kitchen__name {
-  color: #1e266d;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  font-size: 16px;
-  justify-self: start;
-  border: 1px solid violet;
-}
+// .box-kitchen__name {
+//   color: #1e266d;
+//   font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
+//   font-weight: bolder;
+//   font-size: 16px;
+//   justify-self: start;
+//   border: 1px solid violet;
+// }
 
-.line {
-  border-bottom: 1px dotted #696969;
-  height: 16px;
-}
+// .line {
+//   border-bottom: 1px dotted #696969;
+//   height: 16px;
+// }
 
-.box-kitchen__value {
-  color: #000000;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  border: 1px solid violet;
-}
+// .box-kitchen__value {
+//   color: #000000;
+//   font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
+//   font-size: 16px;
+//   border: 1px solid violet;
+// }
 
-.box-kitchen__text {
-  color: #696969;
-  font-family: "NeueHaasUnica-Light", Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  grid-column: 2/5;
-  border: 1px solid violet;
-}
+// .box-kitchen__text {
+//   color: #696969;
+//   font-family: "NeueHaasUnica-Light", Arial, Helvetica, sans-serif;
+//   font-size: 12px;
+//   grid-column: 2/5;
+//   border: 1px solid violet;
+// }
 
 /*----------------------Video-----------------------*/
 .box-video {
