@@ -341,17 +341,23 @@ body {
   color: #ffffff;
   width: 60%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .container-kitchen .container-kitchen__wrap {
   width: 100%;
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 30px 100px 70px 100px;
+  padding: 30px 80px 50px 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5%;
+  gap: 7%;
+}
+.container-kitchen .container-kitchen__wrap .container-kitchen__line {
+  height: 3px;
+  width: 100%;
+  border-top: 0.5px solid #acacac;
+  margin-top: -1px;
 }
 .container-kitchen .container-kitchen__wrap #tab-lunch:checked ~ #lunch-catering-list,
 .container-kitchen .container-kitchen__wrap #tab-dinner:checked ~ #dinner-catering-list,
@@ -367,17 +373,16 @@ body {
   background: 0 0;
   border-bottom: 2px solid transparent;
 }
-.container-kitchen .container-kitchen__wrap label:active {
-  border-bottom-color: #00d664;
+.container-kitchen .container-kitchen__wrap label:hover {
+  border-bottom-color: #009043;
 }
 .container-kitchen .container-kitchen__wrap input[type=radio] {
   display: none;
 }
 .container-kitchen .container-kitchen__wrap input[type=radio]:checked + label {
   cursor: default;
-  font-weight: bold;
-  color: #212529;
-  border-bottom-color: #212529;
+  color: #1e266d;
+  border-bottom-color: #00d664;
 }
 .container-kitchen .container-kitchen__wrap .container-kitchen__menu {
   display: none;
@@ -423,7 +428,7 @@ body {
 }
 .container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__name .menu__line {
   flex-grow: 1;
-  border-bottom: 1px dotted #696969;
+  border-bottom: 0.5px dashed #696969;
   height: 16px;
 }
 .container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__name .menu__price {
@@ -438,7 +443,6 @@ body {
   color: #696969;
 }
 
-/*-----------------Kitchen Menu------------------*/
 /*----------------------Video-----------------------*/
 .box-video {
   padding: 5vh 16vw;

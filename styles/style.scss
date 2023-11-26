@@ -311,18 +311,25 @@ body {
     @include title-h2($color-text-white);
     width: 60%;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
   .container-kitchen__wrap {
     width: 100%;
     background-color: $color-text-white;
     border-radius: 10px;
-    padding: 30px 100px 70px 100px;
-    //input
+    padding: 30px 80px 50px 80px;
+    //------------------------------input tabs
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5%;
+    gap: 7%;
+    .container-kitchen__line {
+      height: 3px;
+      width: 100%;
+      border-top: 0.5px solid $color-text-grey-light;
+      margin-top: -1px;
+    }
+
     #tab-lunch:checked ~ #lunch-catering-list,
     #tab-dinner:checked ~ #dinner-catering-list,
     #tab-breakfast:checked ~ #breakfast-catering-list {
@@ -332,7 +339,6 @@ body {
     label {
       padding-bottom: 20px;
       cursor: pointer;
-      // transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
       color: $color-text-grey;
       font-family: $font-main-reg;
       font-size: 12px;
@@ -340,8 +346,8 @@ body {
       border-bottom: 2px solid transparent;
     }
 
-    label:active {
-      border-bottom-color: $color-btn;
+    label:hover {
+      border-bottom-color: $color-btn-hover;
     }
 
     input[type="radio"] {
@@ -350,14 +356,13 @@ body {
 
     input[type="radio"]:checked + label {
       cursor: default;
-      font-weight: bold;
-      color: #212529;
-      border-bottom-color: #212529;
+      color: $color-text-blu;
+      border-bottom-color: $color-btn;
     }
-    //input
     .container-kitchen__menu {
-      display: none; //new
-      width: 100%; //new
+      display: none;
+      width: 100%;
+      //------------------------------input tabs (end)
       margin-top: 50px;
       .menu__wrap {
         display: flex;
@@ -393,7 +398,7 @@ body {
                 }
                 .menu__line {
                   flex-grow: 1;
-                  border-bottom: 1px dotted $color-text-grey;
+                  border-bottom: 0.5px dashed $color-text-grey;
                   height: 16px;
                 }
                 .menu__price {
@@ -415,103 +420,6 @@ body {
     }
   }
 }
-
-// .box-kitchen {
-//   background-image: url(../assets/images/menu.png);
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   aspect-ratio: 17/7;
-//   padding: 40px 20px 30px 20px;
-//   background-color: #000000;
-//   color: #ffffff;
-//   font-family: "NeueHaasUnica-Light", Arial, Helvetica, sans-serif;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 4vh;
-// }
-
-// .box-kitchen__title {
-//   color: #ffffff;
-//   text-align: center;
-//   padding: 0px 28vw;
-//   line-height: 130%;
-// }
-
-// .box-kitchen__menu {
-//   width: 68%;
-//   height: 60%;
-//   background-color: #ffffff;
-//   border-radius: 10px;
-// }
-
-// .box-kitchen__nav {
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   height: 16%;
-//   color: #777777;
-//   font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-//   font-size: 12px;
-//   font-weight: 500;
-//   padding: 0 20%;
-//   border: 1px solid violet;
-// }
-
-/*-----------------Kitchen Menu------------------*/
-// .box-kitchen__price {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   padding: 20px 30px;
-// }
-
-// .box-kitchen__row {
-//   display: grid;
-//   grid-template-columns: 12% 1fr 1fr 10%;
-//   grid-template-rows: 1fr 1fr;
-//   gap: 10px;
-//   justify-content: flex-start;
-//   margin-bottom: 10px;
-// }
-
-// .box-kitchen__img {
-//   grid-row: 1/3;
-//   border: 1px solid violet;
-// }
-
-// .box-kitchen__img img {
-//   width: 100%;
-// }
-
-// .box-kitchen__name {
-//   color: #1e266d;
-//   font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-//   font-weight: bolder;
-//   font-size: 16px;
-//   justify-self: start;
-//   border: 1px solid violet;
-// }
-
-// .line {
-//   border-bottom: 1px dotted #696969;
-//   height: 16px;
-// }
-
-// .box-kitchen__value {
-//   color: #000000;
-//   font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-//   font-size: 16px;
-//   border: 1px solid violet;
-// }
-
-// .box-kitchen__text {
-//   color: #696969;
-//   font-family: "NeueHaasUnica-Light", Arial, Helvetica, sans-serif;
-//   font-size: 12px;
-//   grid-column: 2/5;
-//   border: 1px solid violet;
-// }
 
 /*----------------------Video-----------------------*/
 .box-video {
