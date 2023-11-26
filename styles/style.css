@@ -345,12 +345,44 @@ body {
 }
 .container-kitchen .container-kitchen__wrap {
   width: 100%;
-}
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu {
   background-color: #ffffff;
   border-radius: 10px;
+  padding: 30px 100px 70px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+}
+.container-kitchen .container-kitchen__wrap #tab-lunch:checked ~ #lunch-catering-list,
+.container-kitchen .container-kitchen__wrap #tab-dinner:checked ~ #dinner-catering-list,
+.container-kitchen .container-kitchen__wrap #tab-breakfast:checked ~ #breakfast-catering-list {
+  display: block;
+}
+.container-kitchen .container-kitchen__wrap label {
+  padding-bottom: 20px;
+  cursor: pointer;
+  color: #696969;
+  font-family: "NeueHaasUnica-Regular";
+  font-size: 12px;
+  background: 0 0;
+  border-bottom: 2px solid transparent;
+}
+.container-kitchen .container-kitchen__wrap label:active {
+  border-bottom-color: #00d664;
+}
+.container-kitchen .container-kitchen__wrap input[type=radio] {
+  display: none;
+}
+.container-kitchen .container-kitchen__wrap input[type=radio]:checked + label {
+  cursor: default;
+  font-weight: bold;
+  color: #212529;
+  border-bottom-color: #212529;
+}
+.container-kitchen .container-kitchen__wrap .container-kitchen__menu {
+  display: none;
   width: 100%;
-  padding: 150px 100px 70px 100px;
+  margin-top: 50px;
 }
 .container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap {
   display: flex;

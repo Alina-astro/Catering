@@ -315,11 +315,50 @@ body {
   }
   .container-kitchen__wrap {
     width: 100%;
+    background-color: $color-text-white;
+    border-radius: 10px;
+    padding: 30px 100px 70px 100px;
+    //input
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    #tab-lunch:checked ~ #lunch-catering-list,
+    #tab-dinner:checked ~ #dinner-catering-list,
+    #tab-breakfast:checked ~ #breakfast-catering-list {
+      display: block;
+    }
+
+    label {
+      padding-bottom: 20px;
+      cursor: pointer;
+      // transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+      color: $color-text-grey;
+      font-family: $font-main-reg;
+      font-size: 12px;
+      background: 0 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    label:active {
+      border-bottom-color: $color-btn;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    input[type="radio"]:checked + label {
+      cursor: default;
+      font-weight: bold;
+      color: #212529;
+      border-bottom-color: #212529;
+    }
+    //input
     .container-kitchen__menu {
-      background-color: $color-text-white;
-      border-radius: 10px;
-      width: 100%;
-      padding: 150px 100px 70px 100px;
+      display: none; //new
+      width: 100%; //new
+      margin-top: 50px;
       .menu__wrap {
         display: flex;
         justify-content: space-between;

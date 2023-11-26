@@ -221,12 +221,14 @@
             <h2 class="container-kitchen__title">Check out our list of cuisines by our great chefs.
                 Choose among our a-la-carte services.</h2>
             <div class="container-kitchen__wrap">
-                <!-- <div class="box-kitchen__nav">
-                    <p class="nav1">Lunch Catering</p>
-                    <p class="nav2">Dinner Catering</p>
-                    <p class="nav3">Breakfast Catering</p>
-                </div> -->
-                <div class="container-kitchen__menu">
+                <input checked id="tab-lunch" name="tab" type="radio" value="#">
+                <label for="tab-lunch">Lunch Catering</label>
+                <input id="tab-dinner" name="tab" type="radio" value="#">
+                <label for="tab-dinner">Dinner Catering</label>
+                <input id="tab-breakfast" name="tab" type="radio" value="#">
+                <label for="tab-breakfast">Breakfast Catering</label>
+                <!-------------------------------Lunch Catering List----------------------------------------------->
+                <div class="container-kitchen__menu" id="lunch-catering-list">
                     <div class="menu__wrap">
                         <div class="menu__list">
                             <div class="menu__item">
@@ -309,6 +311,190 @@
                                         <p>Healthy Salad</p>
                                         <span class="menu__line"></span>
                                         <span class="menu__price">$80</span>
+                                    </div>
+                                    <div class="menu__comment">12 Person Minimum on All Packages.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-------------------------------Dinner Catering List----------------------------------------------->
+                <div class="container-kitchen__menu" id="dinner-catering-list">
+                    <div class="menu__wrap">
+                        <div class="menu__list">
+                            <div class="menu__item">
+                                <div class="menu__img">
+                                    <img src="./assets/images/menu-goulash.png" alt="Classic Goulash">
+                                </div>
+                                <div class="menu__desc">
+                                    <div class="menu__name">
+                                        <p>Dinner Goulash</p>
+                                        <span class="menu__line"></span>
+                                        <span class="menu__price">$120</span>
+                                    </div>
+                                    <div class="menu__comment">12 Person Minimum on All Packages.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__img">
+                                    <img src="./assets/images/menu-spaghetti.png" alt="Classic Italian Spaghetti">
+                                </div>
+                                <div class="menu__desc">
+                                    <div class="menu__name">
+                                        <p>Dinner Spaghetti</p>
+                                        <span class="menu__line"></span>
+                                        <span class="menu__price">$120</span>
+                                    </div>
+                                    <div class="menu__comment">12 Person Minimum on All Packages.</div>
+                                </div>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__img">
+                                    <img src="./assets/images/menu-chicken.png" alt="Grilled Chicken">
+                                </div>
+                                <div class="menu__desc">
+                                    <div class="menu__name">
+                                        <p>Dinner Chicken</p>
+                                        <span class="menu__line"></span>
+                                        <span class="menu__price">$120</span>
+                                    </div>
+                                    <div class="menu__comment">12 Person Minimum on All Packages.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__list">
+                            <div class="menu__item">
+                                <div class="menu__img">
+                                    <img src="./assets/images/menu-steak.png" alt="Fried Pork Steak">
+                                </div>
+                                <div class="menu__desc">
+                                    <div class="menu__name">
+                                        <p>Dinner Steak</p>
+                                        <span class="menu__line"></span>
+                                        <span class="menu__price">$120</span>
+                                    </div>
+                                    <div class="menu__comment">12 Person Minimum on All Packages.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__img">
+                                    <img src="./assets/images/menu-noodles.png" alt="Stir Fry Noodles">
+                                </div>
+                                <div class="menu__desc">
+                                    <div class="menu__name">
+                                        <p>Dinner Noodles</p>
+                                        <span class="menu__line"></span>
+                                        <span class="menu__price">$120</span>
+                                    </div>
+                                    <div class="menu__comment">12 Person Minimum on All Packages.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__img">
+                                    <img src="./assets/images/menu-salad.png" alt="Healthy Salad">
+                                </div>
+                                <div class="menu__desc">
+                                    <div class="menu__name">
+                                        <p>Dinner Salad</p>
+                                        <span class="menu__line"></span>
+                                        <span class="menu__price">$120</span>
+                                    </div>
+                                    <div class="menu__comment">12 Person Minimum on All Packages.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-------------------------------Breakfast Catering List----------------------------------------------->
+                <div class="container-kitchen__menu" id="breakfast-catering-list">
+                    <div class="menu__wrap">
+                        <div class="menu__list">
+                            <div class="menu__item">
+                                <div class="menu__img">
+                                    <img src="./assets/images/menu-goulash.png" alt="Classic Goulash">
+                                </div>
+                                <div class="menu__desc">
+                                    <div class="menu__name">
+                                        <p>Morning Goulash</p>
+                                        <span class="menu__line"></span>
+                                        <span class="menu__price">$50</span>
+                                    </div>
+                                    <div class="menu__comment">12 Person Minimum on All Packages.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__img">
+                                    <img src="./assets/images/menu-spaghetti.png" alt="Classic Italian Spaghetti">
+                                </div>
+                                <div class="menu__desc">
+                                    <div class="menu__name">
+                                        <p>Morning Spaghetti</p>
+                                        <span class="menu__line"></span>
+                                        <span class="menu__price">$50</span>
+                                    </div>
+                                    <div class="menu__comment">12 Person Minimum on All Packages.</div>
+                                </div>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__img">
+                                    <img src="./assets/images/menu-chicken.png" alt="Grilled Chicken">
+                                </div>
+                                <div class="menu__desc">
+                                    <div class="menu__name">
+                                        <p>Morning Chicken</p>
+                                        <span class="menu__line"></span>
+                                        <span class="menu__price">$50</span>
+                                    </div>
+                                    <div class="menu__comment">12 Person Minimum on All Packages.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__list">
+                            <div class="menu__item">
+                                <div class="menu__img">
+                                    <img src="./assets/images/menu-steak.png" alt="Fried Pork Steak">
+                                </div>
+                                <div class="menu__desc">
+                                    <div class="menu__name">
+                                        <p>Morning Steak</p>
+                                        <span class="menu__line"></span>
+                                        <span class="menu__price">$50</span>
+                                    </div>
+                                    <div class="menu__comment">12 Person Minimum on All Packages.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__img">
+                                    <img src="./assets/images/menu-noodles.png" alt="Stir Fry Noodles">
+                                </div>
+                                <div class="menu__desc">
+                                    <div class="menu__name">
+                                        <p>Morning Noodles</p>
+                                        <span class="menu__line"></span>
+                                        <span class="menu__price">$50</span>
+                                    </div>
+                                    <div class="menu__comment">12 Person Minimum on All Packages.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu__item">
+                                <div class="menu__img">
+                                    <img src="./assets/images/menu-salad.png" alt="Healthy Salad">
+                                </div>
+                                <div class="menu__desc">
+                                    <div class="menu__name">
+                                        <p>Morning Salad</p>
+                                        <span class="menu__line"></span>
+                                        <span class="menu__price">$50</span>
                                     </div>
                                     <div class="menu__comment">12 Person Minimum on All Packages.
                                     </div>
