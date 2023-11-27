@@ -468,66 +468,78 @@ body {
 }
 
 //-------------------------------------------------Online Store
-.box-online {
-  padding: 8vh 16vw;
-}
-
-.box-online__title {
-  padding: 2vh 16vw;
-  text-align: center;
-}
-
-.box-online__content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  column-gap: 15px;
-  row-gap: 20px;
-}
-
-.box-online__card {
-  display: grid;
-  grid-template-rows: 80% 6% 6%;
-  gap: 10px;
-}
-
-.box-online__img img {
-  width: 98%;
-  position: relative;
-}
-
-.sale-50 {
-  position: absolute;
-  width: 5%;
-  margin-top: -15%;
-  margin-left: 10%;
-}
-
-.box-online__name {
-  color: #1e266d;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  font-size: 16px;
-  justify-self: start;
-}
-
-.box-online__price {
+.container-online {
+  padding: $padding-block;
+  padding-top: 12vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  gap: 8vh;
+  .container-online__title {
+    @include title-h2($color-text-blu);
+    letter-spacing: 1px;
+    width: 60%;
+    text-align: center;
+  }
+  .container-online__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    .container-online__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 5px;
+      .online-card__img {
+        position: relative;
+        img {
+          width: 98%;
+        }
+        .sale-50 {
+          position: absolute;
+          width: 30%;
+          top: 10px;
+          left: 63%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .online-card__name {
+        font-family: $font-main-reg;
+        font-size: 14px;
+        color: $color-text-blu;
+      }
+      .online-card__price {
+        display: flex;
+        justify-content: space-between;
+        .online-card__value {
+          font-family: $font-main-light;
+          font-size: 14px;
+          color: $color-text-grey;
+        }
+        .online-card__rating {
+          img {
+            width: 12px;
+          }
+        }
+      }
+    }
+  }
+  .container-online__button {
+    a {
+      @extend %button-link;
+    }
+    img {
+      width: $width-arrow;
+      margin-left: 10px;
+    }
+  }
 }
 
-.box-online__value {
-  color: #696969;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}
-
-.box-online__link {
-  margin-top: 10vh;
-  text-align: center;
-}
-
-/*---------------------------Comments------------------------------*/
+//--------------------------------------------------------Comments
 .box-comment {
   padding: 8vh 12vw;
 }

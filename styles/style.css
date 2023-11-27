@@ -26,7 +26,7 @@
   font-family: "Futura PT";
   src: url(../fonts/FuturaPT-Book.ttf);
 }
-.container-video .container-video__wrap .container-video__desc .container-video__button, .container-services .container-services__button a, .slogan .slogan__button a, .header .menu .menu__button a {
+.container-online .container-online__button a, .container-video .container-video__wrap .container-video__desc .container-video__button, .container-services .container-services__button a, .slogan .slogan__button a, .header .menu .menu__button a {
   font-family: "NeueHaasUnica-Regular";
   font-size: 13px;
   text-decoration: none;
@@ -39,11 +39,11 @@
   cursor: pointer;
 }
 
-.container-video .container-video__wrap .container-video__desc .container-video__button:hover, .container-services .container-services__button a:hover, .slogan .slogan__button a:hover, .header .menu .menu__button a:hover {
+.container-online .container-online__button a:hover, .container-video .container-video__wrap .container-video__desc .container-video__button:hover, .container-services .container-services__button a:hover, .slogan .slogan__button a:hover, .header .menu .menu__button a:hover {
   background: #009043;
 }
 
-.container-video .container-video__wrap .container-video__desc .container-video__button:active, .container-services .container-services__button a:active, .slogan .slogan__button a:active, .header .menu .menu__button a:active {
+.container-online .container-online__button a:active, .container-video .container-video__wrap .container-video__desc .container-video__button:active, .container-services .container-services__button a:active, .slogan .slogan__button a:active, .header .menu .menu__button a:active {
   background: #005528;
 }
 
@@ -489,67 +489,72 @@ body {
   margin-left: 8px;
 }
 
-.box-online {
-  padding: 8vh 16vw;
+.container-online {
+  padding: 35px 16vw;
+  padding-top: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8vh;
 }
-
-.box-online__title {
-  padding: 2vh 16vw;
+.container-online .container-online__title {
+  font-family: "NeueHaasUnica-Regular";
+  font-size: 26px;
+  color: #1e266d;
+  letter-spacing: 1px;
+  width: 60%;
   text-align: center;
 }
-
-.box-online__content {
+.container-online .container-online__content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  -moz-column-gap: 15px;
-       column-gap: 15px;
-  row-gap: 20px;
+  gap: 20px;
 }
-
-.box-online__card {
-  display: grid;
-  grid-template-rows: 80% 6% 6%;
-  gap: 10px;
+.container-online .container-online__content .container-online__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
 }
-
-.box-online__img img {
-  width: 98%;
+.container-online .container-online__content .container-online__card .online-card__img {
   position: relative;
 }
-
-.sale-50 {
+.container-online .container-online__content .container-online__card .online-card__img img {
+  width: 98%;
+}
+.container-online .container-online__content .container-online__card .online-card__img .sale-50 {
   position: absolute;
-  width: 5%;
-  margin-top: -15%;
-  margin-left: 10%;
+  width: 30%;
+  top: 10px;
+  left: 63%;
 }
-
-.box-online__name {
+.container-online .container-online__content .container-online__card .online-card__img .sale-50 img {
+  width: 100%;
+}
+.container-online .container-online__content .container-online__card .online-card__name {
+  font-family: "NeueHaasUnica-Regular";
+  font-size: 14px;
   color: #1e266d;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  font-size: 16px;
-  justify-self: start;
 }
-
-.box-online__price {
+.container-online .container-online__content .container-online__card .online-card__price {
   display: flex;
   justify-content: space-between;
 }
-
-.box-online__value {
+.container-online .container-online__content .container-online__card .online-card__price .online-card__value {
+  font-family: "NeueHaasUnica-Light";
+  font-size: 14px;
   color: #696969;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 16px;
+}
+.container-online .container-online__content .container-online__card .online-card__price .online-card__rating img {
+  width: 12px;
+}
+.container-online .container-online__button img {
+  width: 8px;
+  margin-left: 10px;
 }
 
-.box-online__link {
-  margin-top: 10vh;
-  text-align: center;
-}
-
-/*---------------------------Comments------------------------------*/
 .box-comment {
   padding: 8vh 12vw;
 }
