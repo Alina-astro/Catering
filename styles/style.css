@@ -26,7 +26,7 @@
   font-family: "Futura PT";
   src: url(../fonts/FuturaPT-Book.ttf);
 }
-.container-services .container-services__button a, .slogan .slogan__button a, .header .menu .menu__button a {
+.container-video .container-video__wrap .container-video__desc .container-video__button, .container-services .container-services__button a, .slogan .slogan__button a, .header .menu .menu__button a {
   font-family: "NeueHaasUnica-Regular";
   font-size: 13px;
   text-decoration: none;
@@ -39,11 +39,11 @@
   cursor: pointer;
 }
 
-.container-services .container-services__button a:hover, .slogan .slogan__button a:hover, .header .menu .menu__button a:hover {
+.container-video .container-video__wrap .container-video__desc .container-video__button:hover, .container-services .container-services__button a:hover, .slogan .slogan__button a:hover, .header .menu .menu__button a:hover {
   background: #009043;
 }
 
-.container-services .container-services__button a:active, .slogan .slogan__button a:active, .header .menu .menu__button a:active {
+.container-video .container-video__wrap .container-video__desc .container-video__button:active, .container-services .container-services__button a:active, .slogan .slogan__button a:active, .header .menu .menu__button a:active {
   background: #005528;
 }
 
@@ -443,36 +443,52 @@ body {
   color: #696969;
 }
 
-/*----------------------Video-----------------------*/
-.box-video {
-  padding: 5vh 16vw;
+.container-video {
+  width: 100%;
   height: 60vh;
+  padding: 0 30px 0 0;
+}
+.container-video .container-video__wrap {
+  width: 100%;
+  height: 100%;
   background-color: #f5f6fe;
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  padding: 35px 16vw;
+  padding-top: 10vh;
+  display: flex;
+  gap: 5vw;
+}
+.container-video .container-video__wrap .container-video__video {
+  flex-basis: 50%;
+}
+.container-video .container-video__wrap .container-video__video img {
+  width: 100%;
+}
+.container-video .container-video__wrap .container-video__desc {
+  flex-basis: 37%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  gap: 5px;
+  gap: 4vh;
 }
-
-.box-video__video > a > img {
-  width: 80%;
+.container-video .container-video__wrap .container-video__desc .container-video__title {
+  font-family: "NeueHaasUnica-Regular";
+  font-size: 26px;
+  color: #1e266d;
 }
-
-.box-video__text p {
-  color: #696969;
-  font-family: "NeueHaasUnica-Light", Arial, Helvetica, sans-serif;
+.container-video .container-video__wrap .container-video__desc .container-video__text {
+  font-family: "NeueHaasUnica-Light";
   font-size: 14px;
-  letter-spacing: 1%;
-  line-height: 160%;
-  margin-bottom: 8vh;
+  color: #696969;
+  line-height: 150%;
+}
+.container-video .container-video__wrap .container-video__desc .container-video__button {
+  width: 42%;
+}
+.container-video .container-video__wrap .container-video__desc .container-video__button img {
+  width: 8px;
+  margin-left: 8px;
 }
 
-.box-video__text {
-  align-self: center;
-}
-
-/*---------------------------Online Store------------------------------*/
 .box-online {
   padding: 8vh 16vw;
 }
