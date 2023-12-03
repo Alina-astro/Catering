@@ -556,44 +556,16 @@ body {
 }
 
 .container-comment {
-  border: 1px solid purple;
   width: 100%;
   height: 60vh;
   padding: 8vh 12vw;
-  position: relative;
 }
-.container-comment .carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: scroll;
-  counter-reset: item;
-  scroll-behavior: smooth;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-}
-.container-comment .carousel__viewport .container-comment__wrap {
+.container-comment .container-comment__wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-  counter-increment: item;
 }
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: center;
-}
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper .comment-card__box {
+.container-comment .container-comment__wrap .comment-card__box {
   width: 20vw;
   border-radius: 10px;
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1019607843);
@@ -604,79 +576,62 @@ body {
   gap: 20px;
   font-family: "NeueHaasUnica-Regular";
 }
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper .comment-card__box .comment-card__person {
+.container-comment .container-comment__wrap .comment-card__box .comment-card__person {
   display: flex;
   gap: 15px;
 }
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper .comment-card__box .comment-card__person .comment-card__img {
+.container-comment .container-comment__wrap .comment-card__box .comment-card__person .comment-card__img {
   width: 50px;
 }
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper .comment-card__box .comment-card__person .comment-card__img img {
+.container-comment .container-comment__wrap .comment-card__box .comment-card__person .comment-card__img img {
   width: 100%;
 }
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper .comment-card__box .comment-card__person .comment-card__name {
+.container-comment .container-comment__wrap .comment-card__box .comment-card__person .comment-card__name {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
 }
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper .comment-card__box .comment-card__person .comment-card__name .comment-card__name_green {
+.container-comment .container-comment__wrap .comment-card__box .comment-card__person .comment-card__name .comment-card__name_green {
   color: #00d664;
   font-size: 12px;
 }
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper .comment-card__box .comment-card__person .comment-card__name .comment-card__name_grey {
+.container-comment .container-comment__wrap .comment-card__box .comment-card__person .comment-card__name .comment-card__name_grey {
   color: #acacac;
   font-size: 11px;
   line-height: 180%;
 }
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper .comment-card__box .comment-card__subtitle {
+.container-comment .container-comment__wrap .comment-card__box .comment-card__subtitle {
   color: #1e266d;
   font-size: 14px;
 }
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper .comment-card__box .comment-card__text {
+.container-comment .container-comment__wrap .comment-card__box .comment-card__text {
   color: #696969;
   font-size: 11px;
   line-height: 150%;
 }
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper .comment-card__box .comment-card__rating {
+.container-comment .container-comment__wrap .comment-card__box .comment-card__rating {
   display: flex;
   gap: 10px;
 }
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper .comment-card__box .comment-card__rating .comment-card__value {
+.container-comment .container-comment__wrap .comment-card__box .comment-card__rating .comment-card__value {
   color: #f5ad0d;
   font-size: 14px;
 }
-.container-comment .carousel__viewport .container-comment__wrap .carousel__snapper .comment-card__box .comment-card__rating .comment-card__icons img {
+.container-comment .container-comment__wrap .comment-card__box .comment-card__rating .comment-card__icons img {
   width: 12px;
 }
-.container-comment .carousel__viewport .container-comment__points {
-  margin: auto;
-  margin-top: 50px;
-  width: 80px;
+.container-comment .container-comment__points {
+  margin: 30px auto;
+  width: 6vw;
   height: 8px;
   display: flex;
   justify-content: space-between;
 }
-.container-comment .carousel__viewport .container-comment__points img {
+.container-comment .container-comment__points img {
   height: 100%;
 }
 
-@media (hover: hover) {
-  .carousel__snapper {
-    -webkit-animation-name: tonext, snap;
-            animation-name: tonext, snap;
-    -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-  }
-  .carousel__slide:last-child .carousel__snapper {
-    -webkit-animation-name: tostart, snap;
-            animation-name: tostart, snap;
-  }
-}
 /*---------------------------Subscribe------------------------------*/
 .border {
   border-top: 1px solid rgba(105, 105, 105, 0.1019607843);
