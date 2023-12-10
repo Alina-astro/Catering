@@ -633,78 +633,79 @@ body {
 }
 
 /*---------------------------Subscribe------------------------------*/
-.border {
-  border-top: 1px solid rgba(105, 105, 105, 0.1019607843);
-  height: 20px;
-  margin: 0px 17vw;
+.container-subscribe .container-subscribe__border {
+  border-top: 1px solid rgba(105, 105, 105, 0.1058823529);
+  height: 2px;
+  margin: 0 18vw;
 }
-
-.box-sub {
-  padding: 10vh 16vw;
+.container-subscribe .box-sub {
+  padding: 35px 16vw;
+  margin: 40px 0;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
 }
-
-.box-sub__text {
-  width: 21vw;
-  color: #39374d;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: bolder;
+.container-subscribe .box-sub .box-sub__text {
+  flex-basis: 21vw;
   text-align: center;
+  font-family: "NeueHaasUnica-Regular";
+  color: #39374d;
+  font-size: 21px;
   line-height: 130%;
-  letter-spacing: 0.3px;
 }
-
-.box-sub__enter {
-  width: 32vw;
+.container-subscribe .box-sub .box-sub__enter {
+  flex-basis: 32vw;
+  font-family: "NeueHaasUnica-Regular";
 }
-
-.box-sub__email {
-  width: 62%;
-  padding: 12px;
-  margin-right: 10px;
+.container-subscribe .box-sub .box-sub__enter .box-sub__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.container-subscribe .box-sub .box-sub__enter .box-sub__wrap .box-sub__email {
+  width: 70%;
+  height: 40px;
+  padding-left: 15px;
   background-color: #edfcf4;
-  border: 1px solid #f3f3f3;
+  border: 1px solid #f7f4fb;
   border-radius: 30px;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
+  font-family: "NeueHaasUnica-Regular";
   font-size: 11px;
-  color: #1e266d;
   outline: none;
 }
-
-.box-sub__email::-moz-placeholder {
+.container-subscribe .box-sub .box-sub__enter .box-sub__wrap .box-sub__email::-moz-placeholder {
   color: #1e266d;
+  margin-left: 50px;
 }
-
-.box-sub__email:-ms-input-placeholder {
+.container-subscribe .box-sub .box-sub__enter .box-sub__wrap .box-sub__email:-ms-input-placeholder {
   color: #1e266d;
+  margin-left: 50px;
 }
-
-.box-sub__email::placeholder {
+.container-subscribe .box-sub .box-sub__enter .box-sub__wrap .box-sub__email::placeholder {
   color: #1e266d;
+  margin-left: 50px;
 }
-
-.box-sub__button {
+.container-subscribe .box-sub .box-sub__enter .box-sub__wrap .box-sub__button {
   background-color: #00d664;
   border-radius: 28px;
   border: none;
+  height: 40px;
   color: #ffffff;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
   font-size: 12px;
-  padding: 12px;
   width: 28%;
 }
-
-.box-sub__checkbox {
-  color: #acacac;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 12px;
+.container-subscribe .box-sub .box-sub__enter .box-sub__wrap .box-sub__button:hover {
+  background: #009043;
 }
-
-input.box-sub__checkbox {
-  margin-right: 6px;
+.container-subscribe .box-sub .box-sub__enter .box-sub__wrap .box-sub__button:active {
+  background: #005528;
+}
+.container-subscribe .box-sub .box-sub__enter .box-sub__checkbox {
+  color: #acacac;
+  font-size: 11px;
+}
+.container-subscribe .box-sub .box-sub__enter .box-sub__checkbox input {
+  margin-right: 5px;
+  height: 10px;
 }
 
 /*---------------------------Map------------------------------------*/

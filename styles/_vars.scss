@@ -44,6 +44,7 @@ $color-text-white: #ffffff;
 $color-text-grey-light: #acacac;
 $color-text-grey: #696969;
 $color-text-blu: #1e266d;
+$color-text-blu-grey: #39374d;
 $color-text-yellow: #f5ad0d;
 $color-btn: #00d664;
 $color-btn-hover: #009043;
@@ -69,11 +70,11 @@ $width-arrow: 8px;
 }
 
 %button-link:hover {
-  background: #009043;
+  background: $color-btn-hover;
 }
 
 %button-link:active {
-  background: #005528;
+  background: $color-btn-active;
 }
 
 @mixin title-h2($color) {

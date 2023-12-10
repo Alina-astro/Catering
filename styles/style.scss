@@ -619,71 +619,73 @@ body {
   }
 }
 /*---------------------------Subscribe------------------------------*/
-
-.border {
-  border-top: 1px solid #6969691a;
-  height: 20px;
-  margin: 0px 17vw;
-}
-
-.box-sub {
-  padding: 10vh 16vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.box-sub__text {
-  width: 21vw;
-  color: #39374d;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: bolder;
-  text-align: center;
-  line-height: 130%;
-  letter-spacing: 0.3px;
-}
-
-.box-sub__enter {
-  width: 32vw;
-}
-
-.box-sub__email {
-  width: 62%;
-  padding: 12px;
-  margin-right: 10px;
-  background-color: #edfcf4;
-  border: 1px solid #f3f3f3;
-  border-radius: 30px;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  color: #1e266d;
-  outline: none;
-}
-
-.box-sub__email::placeholder {
-  color: #1e266d;
-}
-
-.box-sub__button {
-  background-color: #00d664;
-  border-radius: 28px;
-  border: none;
-  color: #ffffff;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  padding: 12px;
-  width: 28%;
-}
-
-.box-sub__checkbox {
-  color: #acacac;
-  font-family: "NeueHaasUnica-Regular", Arial, Helvetica, sans-serif;
-  font-size: 12px;
-}
-
-input.box-sub__checkbox {
-  margin-right: 6px;
+.container-subscribe {
+  .container-subscribe__border {
+    border-top: 1px solid #6969691b;
+    height: 2px;
+    margin: 0 18vw;
+  }
+  .box-sub {
+    padding: $padding-block;
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    .box-sub__text {
+      flex-basis: 21vw;
+      text-align: center;
+      font-family: $font-main-reg;
+      color: $color-text-blu-grey;
+      font-size: 21px;
+      line-height: 130%;
+    }
+    .box-sub__enter {
+      flex-basis: 32vw;
+      font-family: $font-main-reg;
+      .box-sub__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .box-sub__email {
+          width: 70%;
+          height: 40px;
+          padding-left: 15px;
+          background-color: #edfcf4;
+          border: 1px solid $color-bg-services;
+          border-radius: 30px;
+          font-family: $font-main-reg;
+          font-size: 11px;
+          outline: none;
+        }
+        .box-sub__email::placeholder {
+          color: $color-text-blu;
+          margin-left: 50px;
+        }
+        .box-sub__button {
+          background-color: $color-btn;
+          border-radius: 28px;
+          border: none;
+          height: 40px;
+          color: $color-text-white;
+          font-size: 12px;
+          width: 28%;
+        }
+        .box-sub__button:hover {
+          background: $color-btn-hover;
+        }
+        .box-sub__button:active {
+          background: $color-btn-active;
+        }
+      }
+      .box-sub__checkbox {
+        color: $color-text-grey-light;
+        font-size: 11px;
+        input {
+          margin-right: 5px;
+          height: 10px;
+        }
+      }
+    }
+  }
 }
 
 /*---------------------------Map------------------------------------*/
