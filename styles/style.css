@@ -709,25 +709,14 @@ body {
 }
 
 /*---------------------------Map------------------------------------*/
-.box-map {
-  padding: 40px 0;
-  text-align: center;
-}
-
-.box-map__container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.box-map__img {
-  box-sizing: border-box;
-  padding: 20px 5px;
+.container-map {
   width: 100vw;
+  height: 70vh;
 }
-
-.box-map__img img {
+.container-map iframe {
   width: 100%;
-  text-align: center;
+  height: 100%;
+  border: none;
 }
 
 /*---------------------------Footer Nav------------------------------------*/

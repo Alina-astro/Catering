@@ -689,25 +689,14 @@ body {
 }
 
 /*---------------------------Map------------------------------------*/
-.box-map {
-  padding: 40px 0;
-  text-align: center;
-}
-
-.box-map__container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.box-map__img {
-  box-sizing: border-box;
-  padding: 20px 5px;
+.container-map {
   width: 100vw;
-}
-
-.box-map__img img {
-  width: 100%;
-  text-align: center;
+  height: 70vh;
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 }
 
 /*---------------------------Footer Nav------------------------------------*/
