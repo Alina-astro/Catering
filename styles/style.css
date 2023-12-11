@@ -757,6 +757,7 @@ body {
   border-bottom: 1px solid rgba(54, 51, 69, 0.1019607843);
   display: flex;
   justify-content: space-between;
+  /*---------------------------Footer sidebar-----------------------------------*/
 }
 .footer__wrap-menu .footer__menu {
   flex-basis: 65%;
@@ -807,4 +808,24 @@ body {
   line-height: 20px;
   width: 8vw;
   text-align: end;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*---------------------------Footer text-----------------------------------*/
+.footer__text {
+  width: 65%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: "Roboto";
+  font-size: 12px;
+}
+.footer__text p {
+  color: #696969;
+}
+.footer__text a {
+  text-decoration: none;
+  color: #39374d;
+}
+
+/*---------------------------End-----------------------------------*//*# sourceMappingURL=style.css.map */

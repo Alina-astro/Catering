@@ -732,7 +732,6 @@ body {
     }
   }
 }
-
 /*---------------------------Footer Menu-----------------------------------*/
 .footer__wrap-menu {
   padding: 60px 20px;
@@ -768,6 +767,7 @@ body {
       }
     }
   }
+  /*---------------------------Footer sidebar-----------------------------------*/
   .footer__sidebar {
     flex-grow: 1;
     display: flex;
@@ -790,3 +790,21 @@ body {
     }
   }
 }
+/*---------------------------Footer text-----------------------------------*/
+.footer__text {
+  width: 65%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: $font-footer;
+  font-size: 12px;
+  p {
+    color: $color-text-grey;
+  }
+  a {
+    text-decoration: none;
+    color: $color-text-blu-grey;
+  }
+}
+/*---------------------------End-----------------------------------*/
