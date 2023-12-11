@@ -705,7 +705,7 @@ body {
   margin-top: 30px;
   .footer__wrap-navigation {
     margin: 0 20px;
-    height: 40px;
+    height: 45px;
     border-bottom: 1px solid $color-line;
     display: flex;
     justify-content: space-between;
@@ -725,9 +725,7 @@ body {
       display: flex;
       justify-content: space-between;
       a {
-        // width: 20%;
         img {
-          // width: 80%;
           height: 12px;
         }
       }
@@ -739,57 +737,56 @@ body {
 .footer__wrap-menu {
   padding: 60px 20px;
   border-bottom: 1px solid #3633451a;
-}
-
-.footer__wrap-grid h3 {
-  font-family: "FuturaPT-Regular", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  text-decoration: none;
-  color: #696969;
-}
-
-.footer__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.footer__menu {
-  height: 25vh;
-  align-content: space-between;
-}
-
-.footer__list {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  height: 15vh;
-  align-content: space-between;
-}
-
-.footer__list a {
-  font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  text-decoration: none;
-  color: #696969;
-}
-
-.footer__sidebar p {
-  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.8px;
-  line-height: 140%;
-  color: #696969;
-}
-
-.footer__text {
-  padding: 5vh 0px;
   display: flex;
   justify-content: space-between;
-  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  color: #696969;
-}
-
-.footer__text a {
-  color: #39374d;
-  text-decoration: none;
+  .footer__menu {
+    flex-basis: 65%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    .footer__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h4 {
+        font-family: $font-footer-title;
+        font-size: 14px;
+        color: $color-text-blu-grey;
+        height: 40px;
+      }
+      .footer__items {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          font-family: $font-footer;
+          font-size: 13px;
+          color: $color-text-grey;
+        }
+      }
+    }
+  }
+  .footer__sidebar {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    h4 {
+      font-family: $font-footer-title;
+      font-size: 14px;
+      color: $color-text-blu-grey;
+      height: 40px;
+    }
+    p {
+      font-family: $font-footer;
+      font-size: 12px;
+      color: $color-text-grey;
+      letter-spacing: 0.5px;
+      line-height: 20px;
+      width: 8vw;
+      text-align: end;
+    }
+  }
 }

@@ -726,7 +726,7 @@ body {
 }
 .footer .footer__wrap-navigation {
   margin: 0 20px;
-  height: 40px;
+  height: 45px;
   border-bottom: 1px solid rgba(54, 51, 69, 0.1019607843);
   display: flex;
   justify-content: space-between;
@@ -755,57 +755,56 @@ body {
 .footer__wrap-menu {
   padding: 60px 20px;
   border-bottom: 1px solid rgba(54, 51, 69, 0.1019607843);
-}
-
-.footer__wrap-grid h3 {
-  font-family: "FuturaPT-Regular", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  text-decoration: none;
-  color: #696969;
-}
-
-.footer__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.footer__menu {
-  height: 25vh;
-  align-content: space-between;
-}
-
-.footer__list {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  height: 15vh;
-  align-content: space-between;
-}
-
-.footer__list a {
-  font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  text-decoration: none;
-  color: #696969;
-}
-
-.footer__sidebar p {
-  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.8px;
-  line-height: 140%;
-  color: #696969;
-}
-
-.footer__text {
-  padding: 5vh 0px;
   display: flex;
   justify-content: space-between;
-  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
-  font-size: 12px;
+}
+.footer__wrap-menu .footer__menu {
+  flex-basis: 65%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__wrap-menu .footer__menu .footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__wrap-menu .footer__menu .footer__list h4 {
+  font-family: "Futura PT";
+  font-size: 14px;
+  color: #39374d;
+  height: 40px;
+}
+.footer__wrap-menu .footer__menu .footer__list .footer__items {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__wrap-menu .footer__menu .footer__list .footer__items a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 13px;
   color: #696969;
 }
-
-.footer__text a {
+.footer__wrap-menu .footer__sidebar {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer__wrap-menu .footer__sidebar h4 {
+  font-family: "Futura PT";
+  font-size: 14px;
   color: #39374d;
-  text-decoration: none;
+  height: 40px;
+}
+.footer__wrap-menu .footer__sidebar p {
+  font-family: "Roboto";
+  font-size: 12px;
+  color: #696969;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  width: 8vw;
+  text-align: end;
 }/*# sourceMappingURL=style.css.map */
