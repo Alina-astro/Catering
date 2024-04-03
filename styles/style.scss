@@ -25,6 +25,9 @@ body {
   @media all and (min-width: 280px) and (max-width: 1400px) {
     padding: $padding-block-medium;
   }
+  @media all and (min-width: 280px) and (max-width: 820px) {
+    height: 65vh;
+  }
   .menu {
     display: flex;
     justify-content: space-between;
@@ -120,15 +123,18 @@ body {
 .slogan {
   margin: 26vh 12vw 0px 12vw;
   text-align: center;
-  @media all and (min-width: 431px) and (max-width: 1000px) {
-    margin: 0 12vw 0px 12vw;
+  @media all and (min-width: 501px) and (max-width: 1000px) {
+    margin: 2vh 8vw 0px 8vw;
   }
-  @media all and (min-width: 280px) and (max-width: 430px) {
+  @media all and (min-width: 280px) and (max-width: 500px) {
     margin: 4vh 5vw 0px 5vw;
   }
   .slogan__subtitle {
     font-family: $font-coursive;
     font-size: 50px;
+    @media all and (min-width: 431px) and (max-width: 700px) {
+      font-size: 30px;
+    }
     @media all and (min-width: 280px) and (max-width: 430px) {
       font-size: 20px;
     }
@@ -174,19 +180,40 @@ body {
 //---------------------------------------------------------About
 .container-about {
   padding: $padding-block;
+  @media all and (min-width: 280px) and (max-width: 1400px) {
+    padding: $padding-block-medium;
+  }
   .container-about__title {
     padding: 8vh;
     text-align: center;
+    @media all and (min-width: 501px) and (max-width: 1000px) {
+      padding: 2vh 8vw;
+    }
+    @media all and (min-width: 280px) and (max-width: 500px) {
+      padding: 4vh 5vw;
+    }
     .box-about__subtitle {
       font-family: $font-coursive;
       font-size: 50px;
       color: $color-text-grey-light;
+      @media all and (min-width: 431px) and (max-width: 700px) {
+        font-size: 30px;
+      }
+      @media all and (min-width: 280px) and (max-width: 430px) {
+        font-size: 20px;
+      }
     }
     .box-about__title {
       @include title-h2($color-text-blu);
       font-size: 36px;
       margin-top: 10px;
       margin-bottom: 20px;
+      @media all and (min-width: 431px) and (max-width: 1000px) {
+        font-size: 26px;
+      }
+      @media all and (min-width: 280px) and (max-width: 430px) {
+        font-size: 18px;
+      }
     }
     .box-about__text {
       font-family: $font-main-light;
@@ -194,20 +221,39 @@ body {
       color: $color-text-grey;
       letter-spacing: 1px;
       line-height: 150%;
+      @media all and (min-width: 280px) and (max-width: 700px) {
+        letter-spacing: 0px;
+        line-height: 120%;
+      }
+      @media all and (min-width: 280px) and (max-width: 430px) {
+        font-size: 14px;
+      }
     }
   }
   .container-about__desc {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media all and (min-width: 280px) and (max-width: 500px) {
+      flex-direction: column;
+    }
     .box__desc {
       flex-basis: 36%;
+      @media all and (min-width: 701px) and (max-width: 1200px) {
+        flex-basis: 50%;
+      }
+      @media all and (min-width: 280px) and (max-width: 700px) {
+        flex-basis: 65%;
+      }
       .desc__subtitle {
         font-family: $font-main-reg;
         font-size: 20px;
         letter-spacing: 0.5px;
         line-height: 130%;
         color: $color-text-blu;
+        @media all and (min-width: 280px) and (max-width: 700px) {
+          font-size: 16px;
+        }
       }
       .desc__wrap {
         margin-top: 30px;
@@ -243,6 +289,21 @@ body {
       grid-template-columns: 1fr 10px 1.2fr;
       grid-template-rows: 1.2fr 1fr;
       gap: 15px;
+      @media all and (min-width: 501px) and (max-width: 700px) {
+        flex-basis: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @media all and (min-width: 280px) and (max-width: 500px) {
+        width: 70%;
+      }
+      div {
+        @media all and (min-width: 501px) and (max-width: 700px) {
+          width: 70%;
+        }
+      }
+
       .img_l-top {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -268,6 +329,9 @@ body {
         img {
           width: 70%;
         }
+        @media all and (min-width: 501px) and (max-width: 700px) {
+          display: none;
+        }
       }
       .img_r-bot {
         grid-column: 3/4;
@@ -275,7 +339,19 @@ body {
         img {
           width: 90%;
         }
+        @media all and (min-width: 501px) and (max-width: 700px) {
+          display: none;
+        }
       }
+      // .img_l-top img,
+      // .img_r-top img,
+      // .img_l-bot img,
+      // .img_r-bot img {
+      //   @media all and (min-width: 280px) and (max-width: 700px) {
+      //     width: 100%;
+      //     align-items: center;
+      //   }
+      // }
     }
   }
 }
