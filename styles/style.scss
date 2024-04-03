@@ -22,10 +22,17 @@ body {
   padding: $padding-block;
   background-color: $color-bg;
   color: $color-text-white;
+  @media all and (min-width: 280px) and (max-width: 1400px) {
+    padding: $padding-block-medium;
+  }
   .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media all and (min-width: 280px) and (max-width: 1000px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .menu__logo {
       font-family: $font-main-bold;
       font-size: 22px;
@@ -36,6 +43,9 @@ body {
       font-size: 16px;
       display: flex;
       justify-content: space-around;
+      @media all and (min-width: 280px) and (max-width: 1000px) {
+        flex-direction: column;
+      }
       .nav__dropdown {
         position: relative;
         display: inline-block;
@@ -43,6 +53,10 @@ body {
           padding: 8px;
           border: none;
           cursor: pointer;
+          @media all and (min-width: 280px) and (max-width: 1000px) {
+            font-size: 12px;
+            padding: 5px;
+          }
           img {
             height: 8px;
           }
@@ -52,7 +66,6 @@ body {
           position: absolute;
           background-color: #6564647e;
           width: 100%;
-          // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           z-index: 1;
           a {
             color: $color-text-white;
@@ -60,6 +73,10 @@ body {
             text-decoration: none;
             display: block;
             cursor: pointer;
+            @media all and (min-width: 280px) and (max-width: 1000px) {
+              font-size: 12px;
+              padding: 5px;
+            }
           }
           a:hover {
             background-color: #87878785;
@@ -68,6 +85,10 @@ body {
       }
       .nav__dropdown:hover .dropdown-content {
         display: block;
+        @media all and (min-width: 280px) and (max-width: 1000px) {
+          top: 0;
+          left: 100%;
+        }
       }
       .nav__dropdown:hover .dropdown-link {
         background-color: #6564647e;
@@ -77,10 +98,19 @@ body {
       width: 6vw;
       display: flex;
       justify-content: space-between;
+      @media all and (min-width: 280px) and (max-width: 1000px) {
+        width: 90px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        justify-content: space-around;
+      }
     }
     .menu__button {
       a {
         @extend %button-link;
+        @media all and (min-width: 280px) and (max-width: 1000px) {
+          padding: 10px 15px;
+        }
       }
     }
   }
@@ -90,25 +120,53 @@ body {
 .slogan {
   margin: 26vh 12vw 0px 12vw;
   text-align: center;
+  @media all and (min-width: 431px) and (max-width: 1000px) {
+    margin: 0 12vw 0px 12vw;
+  }
+  @media all and (min-width: 280px) and (max-width: 430px) {
+    margin: 4vh 5vw 0px 5vw;
+  }
   .slogan__subtitle {
     font-family: $font-coursive;
     font-size: 50px;
+    @media all and (min-width: 280px) and (max-width: 430px) {
+      font-size: 20px;
+    }
   }
   .slogan__title {
     font-family: $font-main-reg;
     font-size: 46px;
     letter-spacing: 2px;
     margin-top: 0;
+    @media all and (min-width: 431px) and (max-width: 1000px) {
+      font-size: 26px;
+    }
+    @media all and (min-width: 280px) and (max-width: 430px) {
+      font-size: 18px;
+    }
   }
   .slogan__text {
     font-family: $font-main-light;
     font-size: 15px;
     letter-spacing: 1px;
+    @media all and (min-width: 280px) and (max-width: 430px) {
+      font-size: 12px;
+      letter-spacing: 0px;
+    }
   }
   .slogan__button {
     margin-top: 8vh;
+    @media all and (min-width: 431px) and (max-width: 1000px) {
+      margin-top: 4vh;
+    }
+    @media all and (min-width: 280px) and (max-width: 430px) {
+      margin-top: 2vh;
+    }
     a {
       @extend %button-link;
+      @media all and (min-width: 280px) and (max-width: 430px) {
+        padding: 10px 15px;
+      }
     }
   }
 }

@@ -69,10 +69,21 @@ body {
   background-color: #000000;
   color: #ffffff;
 }
+@media all and (min-width: 280px) and (max-width: 1400px) {
+  .header {
+    padding: 30px 6vw;
+  }
+}
 .header .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  .header .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .header .menu .menu__logo {
   font-family: "NeueHaasUnica-Bold";
@@ -85,6 +96,11 @@ body {
   display: flex;
   justify-content: space-around;
 }
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  .header .menu .menu__nav {
+    flex-direction: column;
+  }
+}
 .header .menu .menu__nav .nav__dropdown {
   position: relative;
   display: inline-block;
@@ -93,6 +109,12 @@ body {
   padding: 8px;
   border: none;
   cursor: pointer;
+}
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  .header .menu .menu__nav .nav__dropdown .dropdown-link {
+    font-size: 12px;
+    padding: 5px;
+  }
 }
 .header .menu .menu__nav .nav__dropdown .dropdown-link img {
   height: 8px;
@@ -111,11 +133,23 @@ body {
   display: block;
   cursor: pointer;
 }
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  .header .menu .menu__nav .nav__dropdown .dropdown-content a {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
 .header .menu .menu__nav .nav__dropdown .dropdown-content a:hover {
   background-color: rgba(135, 135, 135, 0.5215686275);
 }
 .header .menu .menu__nav .nav__dropdown:hover .dropdown-content {
   display: block;
+}
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  .header .menu .menu__nav .nav__dropdown:hover .dropdown-content {
+    top: 0;
+    left: 100%;
+  }
 }
 .header .menu .menu__nav .nav__dropdown:hover .dropdown-link {
   background-color: rgba(101, 100, 100, 0.4941176471);
@@ -125,13 +159,42 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  .header .menu .menu__icons {
+    width: 90px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  .header .menu .menu__button a {
+    padding: 10px 15px;
+  }
+}
+
 .slogan {
   margin: 26vh 12vw 0px 12vw;
   text-align: center;
 }
+@media all and (min-width: 431px) and (max-width: 1000px) {
+  .slogan {
+    margin: 0 12vw 0px 12vw;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 430px) {
+  .slogan {
+    margin: 4vh 5vw 0px 5vw;
+  }
+}
 .slogan .slogan__subtitle {
   font-family: "MrsSaintDelafield";
   font-size: 50px;
+}
+@media all and (min-width: 280px) and (max-width: 430px) {
+  .slogan .slogan__subtitle {
+    font-size: 20px;
+  }
 }
 .slogan .slogan__title {
   font-family: "NeueHaasUnica-Regular";
@@ -139,14 +202,46 @@ body {
   letter-spacing: 2px;
   margin-top: 0;
 }
+@media all and (min-width: 431px) and (max-width: 1000px) {
+  .slogan .slogan__title {
+    font-size: 26px;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 430px) {
+  .slogan .slogan__title {
+    font-size: 18px;
+  }
+}
 .slogan .slogan__text {
   font-family: "NeueHaasUnica-Light";
   font-size: 15px;
   letter-spacing: 1px;
 }
+@media all and (min-width: 280px) and (max-width: 430px) {
+  .slogan .slogan__text {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+}
 .slogan .slogan__button {
   margin-top: 8vh;
 }
+@media all and (min-width: 431px) and (max-width: 1000px) {
+  .slogan .slogan__button {
+    margin-top: 4vh;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 430px) {
+  .slogan .slogan__button {
+    margin-top: 2vh;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 430px) {
+  .slogan .slogan__button a {
+    padding: 10px 15px;
+  }
+}
+
 .container-about {
   padding: 35px 16vw;
 }
@@ -634,7 +729,7 @@ body {
 
 /*---------------------------Subscribe------------------------------*/
 .container-subscribe .container-subscribe__border {
-  border-top: 1px solid rgba(54, 51, 69, 0.1019607843);
+  border-top: 1px solid rgba(65, 53, 127, 0.1019607843);
   height: 2px;
   margin: 0 18vw;
 }
@@ -727,7 +822,7 @@ body {
 .footer .footer__wrap-navigation {
   margin: 0 20px;
   height: 45px;
-  border-bottom: 1px solid rgba(54, 51, 69, 0.1019607843);
+  border-bottom: 1px solid rgba(65, 53, 127, 0.1019607843);
   display: flex;
   justify-content: space-between;
 }
