@@ -84,3 +84,9 @@ $width-arrow: 8px;
   font-size: 26px;
   color: $color;
 }
+
+@mixin title-h2_media-1024($color) {
+  font-family: $font-main-reg;
+  font-size: 18px;
+  color: $color;
+}

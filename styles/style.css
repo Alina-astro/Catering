@@ -463,18 +463,30 @@ body {
   padding-top: 18vh;
   padding-bottom: 10vh;
 }
+@media all and (min-width: 280px) and (max-width: 1024px) {
+  .container-services {
+    padding: 10vh 10vw;
+  }
+}
 .container-services .container-services__title {
   font-family: "NeueHaasUnica-Regular";
   font-size: 26px;
   color: #1e266d;
 }
-.container-services .container-services__wrap {
+@media all and (min-width: 280px) and (max-width: 1024px) {
+  .container-services .container-services__title {
+    font-family: "NeueHaasUnica-Regular";
+    font-size: 18px;
+    color: #1e266d;
+  }
+}
+.container-services .container-services__box {
   margin: 8vh 0 8vh 0;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
-.container-services .container-services__wrap .container-services__box {
+.container-services .container-services__box .container-services__card {
   background-color: #ffffff;
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 5px;
@@ -485,38 +497,40 @@ body {
   justify-content: center;
   align-items: center;
   gap: 12px;
+  position: relative;
   z-index: 1;
 }
-.container-services .container-services__wrap .container-services__box .container-services__icon {
+.container-services .container-services__box .container-services__card .container-services__icon {
   width: 21%;
 }
-.container-services .container-services__wrap .container-services__box .container-services__icon img {
+.container-services .container-services__box .container-services__card .container-services__icon img {
   width: 100%;
 }
-.container-services .container-services__wrap .container-services__box .container-services__subtitle {
+.container-services .container-services__box .container-services__card .container-services__subtitle {
   font-family: "NeueHaasUnica-Regular";
   color: #1e266d;
   font-size: 16px;
 }
-.container-services .container-services__wrap .container-services__box .container-services__text {
+.container-services .container-services__box .container-services__card .container-services__text {
   font-family: "NeueHaasUnica-Light";
   color: #696969;
   font-size: 12px;
   line-height: 140%;
 }
-.container-services .container-services__wrap .container-services__box .container-services__link a {
+.container-services .container-services__box .container-services__card .container-services__link a {
   text-decoration: none;
   font-family: "NeueHaasUnica-Regular";
   color: #00d664;
   font-size: 12px;
   line-height: 140%;
 }
-.container-services .container-services__wrap .container-services__icon-points {
+.container-services .container-services__box .container-services__icon-points {
   position: absolute;
   z-index: 0;
-  width: 8vw;
-  top: 13.5vh;
-  left: 62.5vw;
+  width: 12vw;
+  height: 70%;
+  right: -5%;
+  bottom: 2%;
 }
 .container-services .container-services__button a img {
   width: 8px;
