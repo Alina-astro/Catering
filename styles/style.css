@@ -761,11 +761,29 @@ body {
   display: flex;
   gap: 5vw;
 }
+@media all and (min-width: 280px) and (max-width: 1500px) {
+  .container-video .container-video__wrap {
+    padding: 8vh 8vw;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  .container-video .container-video__wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .container-video .container-video__wrap .container-video__video {
   flex-basis: 50%;
+  text-align: center;
 }
-.container-video .container-video__wrap .container-video__video img {
+.container-video .container-video__wrap img {
   width: 100%;
+}
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  .container-video .container-video__wrap img {
+    width: 70%;
+  }
 }
 .container-video .container-video__wrap .container-video__desc {
   flex-basis: 37%;
@@ -774,10 +792,30 @@ body {
   justify-content: center;
   gap: 4vh;
 }
+@media all and (min-width: 1001px) and (max-width: 1500px) {
+  .container-video .container-video__wrap .container-video__desc {
+    flex-basis: 45%;
+    justify-content: flex-start;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  .container-video .container-video__wrap .container-video__desc {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    flex-basis: content;
+  }
+}
 .container-video .container-video__wrap .container-video__desc .container-video__title {
   font-family: "NeueHaasUnica-Regular";
   font-size: 26px;
   color: #1e266d;
+}
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  .container-video .container-video__wrap .container-video__desc .container-video__title {
+    font-size: 18px;
+  }
 }
 .container-video .container-video__wrap .container-video__desc .container-video__text {
   font-family: "NeueHaasUnica-Light";
@@ -787,6 +825,11 @@ body {
 }
 .container-video .container-video__wrap .container-video__desc .container-video__button {
   width: 42%;
+}
+@media all and (min-width: 280px) and (max-width: 440px) {
+  .container-video .container-video__wrap .container-video__desc .container-video__button {
+    width: 70%;
+  }
 }
 .container-video .container-video__wrap .container-video__desc .container-video__button img {
   width: 8px;
