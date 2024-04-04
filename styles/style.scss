@@ -26,7 +26,7 @@ body {
     padding: $padding-block-medium;
   }
   @media all and (min-width: 280px) and (max-width: 820px) {
-    height: 65vh;
+    height: 80vh;
   }
   .menu {
     display: flex;
@@ -354,13 +354,16 @@ body {
   padding: $padding-block;
   padding-top: 18vh;
   padding-bottom: 10vh;
-  @media all and (min-width: 280px) and (max-width: 1024px) {
+  @media all and (min-width: 401px) and (max-width: 1024px) {
     padding: 10vh 10vw;
+  }
+  @media all and (min-width: 280px) and (max-width: 400px) {
+    padding: 5vh 5vw;
   }
   .container-services__title {
     @include title-h2($color-text-blu);
     @media all and (min-width: 280px) and (max-width: 1024px) {
-      @include title-h2_media-1200($color-text-blu);
+      font-size: 18px;
     }
   }
   .container-services__box {
@@ -368,10 +371,19 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
+    @media all and (min-width: 280px) and (max-width: 900px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      gap: 15px;
+    }
     .container-services__card {
       background-color: $color-text-white;
       box-shadow: 0px 10px 60px 0px #0000001a;
       border-radius: 5px;
+      box-sizing: border-box;
       width: 16vw;
       padding: 30px;
       display: flex;
@@ -381,8 +393,19 @@ body {
       gap: 12px;
       position: relative;
       z-index: 1;
+      @media all and (min-width: 280px) and (max-width: 900px) {
+        width: 90%;
+        height: 90%;
+        padding: 20px 15px;
+      }
       .container-services__icon {
         width: 21%;
+        @media all and (min-width: 501px) and (max-width: 900px) {
+          width: 12%;
+        }
+        @media all and (min-width: 280px) and (max-width: 400px) {
+          width: 30%;
+        }
         img {
           width: 100%;
         }
@@ -391,12 +414,19 @@ body {
         font-family: $font-main-reg;
         color: $color-text-blu;
         font-size: 16px;
+        @media all and (min-width: 280px) and (max-width: 900px) {
+          font-size: 12px;
+        }
       }
       .container-services__text {
         font-family: $font-main-light;
         color: $color-text-grey;
         font-size: 12px;
         line-height: 140%;
+        @media all and (min-width: 280px) and (max-width: 900px) {
+          font-size: 10px;
+          line-height: 110%;
+        }
       }
       .container-services__link {
         a {
@@ -415,6 +445,9 @@ body {
       height: 70%;
       right: -5%;
       bottom: 2%;
+      @media all and (min-width: 280px) and (max-width: 1023px) {
+        display: none;
+      }
     }
   }
   .container-services__button {
