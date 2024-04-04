@@ -473,27 +473,48 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 280px) and (max-width: 700px) {
+    height: 70vh;
+    padding: 20px 8vw;
+  }
   .container-kitchen__title {
     @include title-h2($color-text-white);
     width: 60%;
     text-align: center;
     margin-bottom: 70px;
+    @media all and (min-width: 280px) and (max-width: 1300px) {
+      width: 80%;
+    }
+    @media all and (min-width: 280px) and (max-width: 700px) {
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
   }
   .container-kitchen__wrap {
     width: 100%;
     background-color: $color-text-white;
     border-radius: 10px;
     padding: 30px 80px 50px 80px;
+    @media all and (min-width: 280px) and (max-width: 600px) {
+      padding: 15px;
+    }
     //------------------------------input tabs
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 7%;
+    @media all and (min-width: 280px) and (max-width: 429px) {
+      flex-direction: column;
+      align-items: center;
+    }
     .container-kitchen__line {
       height: 3px;
       width: 100%;
       border-top: 0.5px solid $color-text-grey-light;
       margin-top: -1px;
+      @media all and (min-width: 280px) and (max-width: 429px) {
+        display: none;
+      }
     }
 
     #tab-lunch:checked ~ #lunch-catering-list,
@@ -510,6 +531,10 @@ body {
       font-size: 12px;
       background: 0 0;
       border-bottom: 2px solid transparent;
+      @media all and (min-width: 280px) and (max-width: 429px) {
+        padding-top: 15px;
+        padding-bottom: 5px;
+      }
     }
 
     label:hover {
@@ -533,6 +558,9 @@ body {
       .menu__wrap {
         display: flex;
         justify-content: space-between;
+        @media all and (min-width: 280px) and (max-width: 1300px) {
+          flex-direction: column;
+        }
         .menu__list {
           flex-basis: 48%;
           display: flex;

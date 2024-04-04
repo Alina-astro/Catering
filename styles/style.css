@@ -595,6 +595,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media all and (min-width: 280px) and (max-width: 700px) {
+  .container-kitchen {
+    height: 70vh;
+    padding: 20px 8vw;
+  }
+}
 .container-kitchen .container-kitchen__title {
   font-family: "NeueHaasUnica-Regular";
   font-size: 26px;
@@ -602,6 +608,17 @@ body {
   width: 60%;
   text-align: center;
   margin-bottom: 70px;
+}
+@media all and (min-width: 280px) and (max-width: 1300px) {
+  .container-kitchen .container-kitchen__title {
+    width: 80%;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 700px) {
+  .container-kitchen .container-kitchen__title {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
 }
 .container-kitchen .container-kitchen__wrap {
   width: 100%;
@@ -613,11 +630,27 @@ body {
   justify-content: center;
   gap: 7%;
 }
+@media all and (min-width: 280px) and (max-width: 600px) {
+  .container-kitchen .container-kitchen__wrap {
+    padding: 15px;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 429px) {
+  .container-kitchen .container-kitchen__wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container-kitchen .container-kitchen__wrap .container-kitchen__line {
   height: 3px;
   width: 100%;
   border-top: 0.5px solid #acacac;
   margin-top: -1px;
+}
+@media all and (min-width: 280px) and (max-width: 429px) {
+  .container-kitchen .container-kitchen__wrap .container-kitchen__line {
+    display: none;
+  }
 }
 .container-kitchen .container-kitchen__wrap #tab-lunch:checked ~ #lunch-catering-list,
 .container-kitchen .container-kitchen__wrap #tab-dinner:checked ~ #dinner-catering-list,
@@ -632,6 +665,12 @@ body {
   font-size: 12px;
   background: 0 0;
   border-bottom: 2px solid transparent;
+}
+@media all and (min-width: 280px) and (max-width: 429px) {
+  .container-kitchen .container-kitchen__wrap label {
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
 }
 .container-kitchen .container-kitchen__wrap label:hover {
   border-bottom-color: #009043;
@@ -652,6 +691,11 @@ body {
 .container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap {
   display: flex;
   justify-content: space-between;
+}
+@media all and (min-width: 280px) and (max-width: 1300px) {
+  .container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap {
+    flex-direction: column;
+  }
 }
 .container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list {
   flex-basis: 48%;
