@@ -980,16 +980,32 @@ body {
 .footer {
   padding: $padding-block;
   margin-top: 30px;
+  @media all and (min-width: 280px) and (max-width: 1200px) {
+    padding: 5vh 5vw;
+  }
   .footer__wrap-navigation {
     margin: 0 20px;
     height: 45px;
     border-bottom: 1px solid $color-line;
     display: flex;
     justify-content: space-between;
+    @media all and (min-width: 280px) and (max-width: 500px) {
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
     .footer__nav {
       flex-basis: 35%;
       display: flex;
       justify-content: space-between;
+      @media all and (min-width: 501px) and (max-width: 1200px) {
+        flex-basis: 65%;
+      }
+      @media all and (min-width: 280px) and (max-width: 500px) {
+        flex-direction: column;
+        gap: 5px;
+      }
       a {
         font-family: $font-footer;
         font-size: 12px;
@@ -1001,6 +1017,12 @@ body {
       flex-basis: 8%;
       display: flex;
       justify-content: space-between;
+      @media all and (min-width: 501px) and (max-width: 1200px) {
+        flex-basis: 20%;
+      }
+      @media all and (min-width: 280px) and (max-width: 500px) {
+        gap: 15px;
+      }
       a {
         img {
           height: 12px;
@@ -1020,6 +1042,11 @@ body {
     height: 20vh;
     display: flex;
     justify-content: space-between;
+    @media all and (min-width: 280px) and (max-width: 700px) {
+      flex-direction: column;
+      align-items: flex-start;
+      flex-basis: 15%;
+    }
     .footer__list {
       display: flex;
       flex-direction: column;
@@ -1035,6 +1062,9 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media all and (min-width: 280px) and (max-width: 700px) {
+          display: none;
+        }
         a {
           text-decoration: none;
           font-family: $font-footer;
@@ -1064,6 +1094,9 @@ body {
       line-height: 20px;
       width: 8vw;
       text-align: end;
+      @media all and (min-width: 280px) and (max-width: 700px) {
+        width: 30vw;
+      }
     }
   }
 }
@@ -1076,6 +1109,10 @@ body {
   align-items: flex-end;
   font-family: $font-footer;
   font-size: 12px;
+  @media all and (min-width: 280px) and (max-width: 700px) {
+    width: 100%;
+    flex-direction: column;
+  }
   p {
     color: $color-text-grey;
   }
