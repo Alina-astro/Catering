@@ -931,13 +931,22 @@ body {
 
 .container-comment {
   width: 100%;
-  height: 60vh;
   padding: 8vh 12vw;
+}
+@media all and (min-width: 280px) and (max-width: 1000px) {
+  .container-comment {
+    padding: 8vh 5vw;
+  }
 }
 .container-comment .container-comment__wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media all and (min-width: 761px) and (max-width: 1023px) {
+  .container-comment .container-comment__wrap {
+    gap: 30px;
+  }
 }
 .container-comment .container-comment__wrap .comment-card__box {
   width: 20vw;
@@ -949,6 +958,21 @@ body {
   justify-content: space-between;
   gap: 20px;
   font-family: "NeueHaasUnica-Regular";
+}
+@media all and (min-width: 280px) and (max-width: 1023px) {
+  .container-comment .container-comment__wrap .comment-card__box {
+    gap: 8px;
+  }
+}
+@media all and (min-width: 761px) and (max-width: 1023px) {
+  .container-comment .container-comment__wrap .comment-card__box {
+    width: 30vw;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 760px) {
+  .container-comment .container-comment__wrap .comment-card__box {
+    width: auto;
+  }
 }
 .container-comment .container-comment__wrap .comment-card__box .comment-card__person {
   display: flex;
@@ -995,12 +1019,27 @@ body {
 .container-comment .container-comment__wrap .comment-card__box .comment-card__rating .comment-card__icons img {
   width: 12px;
 }
+@media all and (min-width: 280px) and (max-width: 760px) {
+  .container-comment .container-comment__wrap .carousel {
+    display: none;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 1023px) {
+  .container-comment .container-comment__wrap .container-comment__arrow {
+    display: none;
+  }
+}
 .container-comment .container-comment__points {
   margin: 30px auto;
   width: 6vw;
   height: 8px;
   display: flex;
   justify-content: space-between;
+}
+@media all and (min-width: 280px) and (max-width: 760px) {
+  .container-comment .container-comment__points {
+    width: 15vw;
+  }
 }
 .container-comment .container-comment__points img {
   height: 100%;
