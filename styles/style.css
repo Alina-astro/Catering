@@ -64,10 +64,10 @@ body {
   background-image: url(../assets/images/bg-header.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  padding: 35px 16vw;
   background-color: #000000;
   color: #ffffff;
+  height: 100vh;
+  padding: 35px 16vw;
 }
 @media all and (min-width: 280px) and (max-width: 1400px) {
   .header {
@@ -291,7 +291,8 @@ body {
 }
 .container-about .container-about__title .box-about__title {
   font-family: "NeueHaasUnica-Regular";
-  font-size: 26px;
+  font-size: 34px;
+  line-height: 140%;
   color: #1e266d;
   font-size: 36px;
   margin-top: 10px;
@@ -475,7 +476,8 @@ body {
 }
 .container-services .container-services__title {
   font-family: "NeueHaasUnica-Regular";
-  font-size: 26px;
+  font-size: 34px;
+  line-height: 140%;
   color: #1e266d;
 }
 @media all and (min-width: 280px) and (max-width: 1024px) {
@@ -487,6 +489,7 @@ body {
   margin: 8vh 0 8vh 0;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   position: relative;
 }
 @media all and (min-width: 280px) and (max-width: 900px) {
@@ -584,167 +587,200 @@ body {
 }
 
 .container-kitchen {
-  width: 100vw;
-  height: 82vh;
+  width: 100%;
+  height: 80vh;
   background-image: url(../assets/images/bg-kitchen.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 35px 16vw;
+  background-position: center;
+  padding: 10vh 16vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  gap: 15%;
 }
-@media all and (min-width: 280px) and (max-width: 700px) {
+@media all and (min-width: 280px) and (max-width: 1300px) {
   .container-kitchen {
-    height: 70vh;
-    padding: 20px 8vw;
+    height: auto;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 600px) {
+  .container-kitchen {
+    padding: 20px;
   }
 }
 .container-kitchen .container-kitchen__title {
   font-family: "NeueHaasUnica-Regular";
-  font-size: 26px;
+  font-size: 34px;
+  line-height: 140%;
   color: #ffffff;
   width: 60%;
   text-align: center;
-  margin-bottom: 70px;
+  flex-basis: 15%;
+}
+@media all and (min-width: 280px) and (max-width: 1680px) {
+  .container-kitchen .container-kitchen__title {
+    width: 100%;
+  }
 }
 @media all and (min-width: 280px) and (max-width: 1300px) {
   .container-kitchen .container-kitchen__title {
-    width: 80%;
-  }
-}
-@media all and (min-width: 280px) and (max-width: 700px) {
-  .container-kitchen .container-kitchen__title {
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 .container-kitchen .container-kitchen__wrap {
   width: 100%;
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 30px 80px 50px 80px;
+  padding: 30px;
+  flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 7%;
+  gap: 80px;
 }
-@media all and (min-width: 280px) and (max-width: 600px) {
+@media all and (min-width: 601px) and (max-width: 1300px) {
   .container-kitchen .container-kitchen__wrap {
-    padding: 15px;
+    gap: 30px;
   }
 }
-@media all and (min-width: 280px) and (max-width: 429px) {
+@media all and (min-width: 280px) and (max-width: 850px) {
   .container-kitchen .container-kitchen__wrap {
     flex-direction: column;
     align-items: center;
   }
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__line {
-  height: 3px;
-  width: 100%;
-  border-top: 0.5px solid #acacac;
-  margin-top: -1px;
-}
-@media all and (min-width: 280px) and (max-width: 429px) {
-  .container-kitchen .container-kitchen__wrap .container-kitchen__line {
-    display: none;
+@media all and (min-width: 280px) and (max-width: 600px) {
+  .container-kitchen .container-kitchen__wrap {
+    padding: 15px;
+    gap: 15px;
   }
 }
-.container-kitchen .container-kitchen__wrap #tab-lunch:checked ~ #lunch-catering-list,
-.container-kitchen .container-kitchen__wrap #tab-dinner:checked ~ #dinner-catering-list,
-.container-kitchen .container-kitchen__wrap #tab-breakfast:checked ~ #breakfast-catering-list {
+.container-kitchen #tab-lunch:checked ~ #lunch-catering-list,
+.container-kitchen #tab-dinner:checked ~ #dinner-catering-list,
+.container-kitchen #tab-breakfast:checked ~ #breakfast-catering-list {
   display: block;
 }
-.container-kitchen .container-kitchen__wrap label {
-  padding-bottom: 20px;
+.container-kitchen label {
   cursor: pointer;
   color: #696969;
   font-family: "NeueHaasUnica-Regular";
-  font-size: 12px;
+  font-size: 16px;
   background: 0 0;
   border-bottom: 2px solid transparent;
 }
-@media all and (min-width: 280px) and (max-width: 429px) {
-  .container-kitchen .container-kitchen__wrap label {
-    padding-top: 15px;
-    padding-bottom: 5px;
+@media all and (min-width: 851px) and (max-width: 1300px) {
+  .container-kitchen label {
+    padding-bottom: 20px;
   }
 }
-.container-kitchen .container-kitchen__wrap label:hover {
+@media all and (min-width: 280px) and (max-width: 850px) {
+  .container-kitchen label {
+    padding-bottom: 10px;
+  }
+}
+.container-kitchen label:hover {
   border-bottom-color: #009043;
 }
-.container-kitchen .container-kitchen__wrap input[type=radio] {
+.container-kitchen input[type=radio] {
   display: none;
 }
-.container-kitchen .container-kitchen__wrap input[type=radio]:checked + label {
+.container-kitchen input[type=radio]:checked + label {
   cursor: default;
   color: #1e266d;
   border-bottom-color: #00d664;
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu {
+.container-kitchen .container-kitchen__menu {
   display: none;
   width: 100%;
-  margin-top: 50px;
+  padding: 60px;
+  border-top: 0.5px solid #acacac;
+  margin-top: -80px;
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap {
+@media all and (min-width: 851px) and (max-width: 1300px) {
+  .container-kitchen .container-kitchen__menu {
+    margin-top: -30px;
+  }
+}
+@media all and (min-width: 280px) and (max-width: 850px) {
+  .container-kitchen .container-kitchen__menu {
+    margin-top: 0;
+    padding: 20px;
+  }
+}
+.container-kitchen .container-kitchen__menu .menu__wrap {
   display: flex;
   justify-content: space-between;
 }
 @media all and (min-width: 280px) and (max-width: 1300px) {
-  .container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap {
+  .container-kitchen .container-kitchen__menu .menu__wrap {
     flex-direction: column;
+    gap: 20px;
   }
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list {
+.container-kitchen .container-kitchen__menu .menu__wrap .menu__list {
   flex-basis: 48%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list .menu__item {
+.container-kitchen .container-kitchen__menu .menu__wrap .menu__list .menu__item {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__img {
+.container-kitchen .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__img {
   flex-basis: 50px;
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__img img {
+.container-kitchen .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__img img {
   width: 100%;
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc {
+.container-kitchen .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__name {
+.container-kitchen .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__name {
   display: flex;
   justify-content: space-between;
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__name p {
+.container-kitchen .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__name p {
   font-family: "NeueHaasUnica-Regular";
-  font-size: 16px;
+  font-size: 22px;
   color: #1e266d;
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__name .menu__line {
+@media all and (min-width: 280px) and (max-width: 1300px) {
+  .container-kitchen .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__name p {
+    font-size: 16px;
+  }
+}
+.container-kitchen .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__name .menu__line {
   flex-grow: 1;
   border-bottom: 0.5px dashed #696969;
   height: 16px;
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__name .menu__price {
+.container-kitchen .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__name .menu__price {
   font-family: "NeueHaasUnica-Light";
-  font-size: 16px;
+  font-size: 22px;
   color: #000000;
   margin-left: 10px;
 }
-.container-kitchen .container-kitchen__wrap .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__comment {
+@media all and (min-width: 280px) and (max-width: 1300px) {
+  .container-kitchen .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__name .menu__price {
+    font-size: 16px;
+  }
+}
+.container-kitchen .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__comment {
   font-family: "Roboto";
-  font-size: 12px;
+  font-size: 16px;
   color: #696969;
+}
+@media all and (min-width: 280px) and (max-width: 1300px) {
+  .container-kitchen .container-kitchen__menu .menu__wrap .menu__list .menu__item .menu__desc .menu__comment {
+    font-size: 12px;
+  }
 }
 
 .container-video {
@@ -809,7 +845,8 @@ body {
 }
 .container-video .container-video__wrap .container-video__desc .container-video__title {
   font-family: "NeueHaasUnica-Regular";
-  font-size: 26px;
+  font-size: 34px;
+  line-height: 140%;
   color: #1e266d;
 }
 @media all and (min-width: 280px) and (max-width: 1000px) {
@@ -852,7 +889,8 @@ body {
 }
 .container-online .container-online__title {
   font-family: "NeueHaasUnica-Regular";
-  font-size: 26px;
+  font-size: 34px;
+  line-height: 140%;
   color: #1e266d;
   letter-spacing: 1px;
   width: 60%;
@@ -942,6 +980,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 @media all and (min-width: 761px) and (max-width: 1023px) {
   .container-comment .container-comment__wrap {
@@ -1056,6 +1095,7 @@ body {
   margin: 40px 0;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 @media all and (min-width: 280px) and (max-width: 800px) {
   .container-subscribe .box-sub {
@@ -1136,7 +1176,7 @@ body {
 
 /*---------------------------Map------------------------------------*/
 .container-map {
-  width: 100vw;
+  width: 100%;
   height: 70vh;
 }
 .container-map iframe {

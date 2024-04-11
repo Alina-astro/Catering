@@ -18,10 +18,10 @@ body {
   background-image: url(../assets/images/bg-header.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  padding: $padding-block;
   background-color: $color-bg;
   color: $color-text-white;
+  height: 100vh;
+  padding: $padding-block;
   @media all and (min-width: 280px) and (max-width: 1400px) {
     padding: $padding-block-medium;
   }
@@ -370,6 +370,7 @@ body {
     margin: 8vh 0 8vh 0;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     position: relative;
     @media all and (min-width: 280px) and (max-width: 900px) {
       display: grid;
@@ -463,149 +464,166 @@ body {
 //---------------------------------------------------------Kitchen
 
 .container-kitchen {
-  width: 100vw;
-  height: 82vh;
+  width: 100%;
+  height: 80vh;
   background-image: url(../assets/images/bg-kitchen.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: $padding-block;
+  background-position: center;
+  padding: 10vh 16vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  @media all and (min-width: 280px) and (max-width: 700px) {
-    height: 70vh;
-    padding: 20px 8vw;
+  gap: 15%;
+  @media all and (min-width: 280px) and (max-width: 1300px) {
+    height: auto;
+  }
+  @media all and (min-width: 280px) and (max-width: 600px) {
+    padding: 20px;
   }
   .container-kitchen__title {
     @include title-h2($color-text-white);
     width: 60%;
     text-align: center;
-    margin-bottom: 70px;
-    @media all and (min-width: 280px) and (max-width: 1300px) {
-      width: 80%;
+    flex-basis: 15%;
+    @media all and (min-width: 280px) and (max-width: 1680px) {
+      width: 100%;
     }
-    @media all and (min-width: 280px) and (max-width: 700px) {
+    @media all and (min-width: 280px) and (max-width: 1300px) {
       margin-bottom: 40px;
-      font-size: 18px;
+      font-size: 22px;
     }
   }
   .container-kitchen__wrap {
     width: 100%;
     background-color: $color-text-white;
     border-radius: 10px;
-    padding: 30px 80px 50px 80px;
-    @media all and (min-width: 280px) and (max-width: 600px) {
-      padding: 15px;
-    }
-    //------------------------------input tabs
+    padding: 30px;
+    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 7%;
-    @media all and (min-width: 280px) and (max-width: 429px) {
+    gap: 80px;
+    @media all and (min-width: 601px) and (max-width: 1300px) {
+      gap: 30px;
+    }
+    @media all and (min-width: 280px) and (max-width: 850px) {
       flex-direction: column;
       align-items: center;
     }
-    .container-kitchen__line {
-      height: 3px;
-      width: 100%;
-      border-top: 0.5px solid $color-text-grey-light;
-      margin-top: -1px;
-      @media all and (min-width: 280px) and (max-width: 429px) {
-        display: none;
-      }
+    @media all and (min-width: 280px) and (max-width: 600px) {
+      padding: 15px;
+      gap: 15px;
     }
+  }
+  //------------------------------input tabs
+  #tab-lunch:checked ~ #lunch-catering-list,
+  #tab-dinner:checked ~ #dinner-catering-list,
+  #tab-breakfast:checked ~ #breakfast-catering-list {
+    display: block;
+  }
 
-    #tab-lunch:checked ~ #lunch-catering-list,
-    #tab-dinner:checked ~ #dinner-catering-list,
-    #tab-breakfast:checked ~ #breakfast-catering-list {
-      display: block;
-    }
-
-    label {
+  label {
+    cursor: pointer;
+    color: $color-text-grey;
+    font-family: $font-main-reg;
+    font-size: 16px;
+    background: 0 0;
+    border-bottom: 2px solid transparent;
+    @media all and (min-width: 851px) and (max-width: 1300px) {
       padding-bottom: 20px;
-      cursor: pointer;
-      color: $color-text-grey;
-      font-family: $font-main-reg;
-      font-size: 12px;
-      background: 0 0;
-      border-bottom: 2px solid transparent;
-      @media all and (min-width: 280px) and (max-width: 429px) {
-        padding-top: 15px;
-        padding-bottom: 5px;
+    }
+    @media all and (min-width: 280px) and (max-width: 850px) {
+      padding-bottom: 10px;
+    }
+  }
+
+  label:hover {
+    border-bottom-color: $color-btn-hover;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]:checked + label {
+    cursor: default;
+    color: $color-text-blu;
+    border-bottom-color: $color-btn;
+  }
+  .container-kitchen__menu {
+    display: none;
+    width: 100%;
+    padding: 60px;
+    border-top: 0.5px solid $color-text-grey-light;
+    margin-top: -80px;
+    @media all and (min-width: 851px) and (max-width: 1300px) {
+      margin-top: -30px;
+    }
+    @media all and (min-width: 280px) and (max-width: 850px) {
+      margin-top: 0;
+      padding: 20px;
+    }
+    //------------------------------input tabs (end)
+    .menu__wrap {
+      display: flex;
+      justify-content: space-between;
+      @media all and (min-width: 280px) and (max-width: 1300px) {
+        flex-direction: column;
+        gap: 20px;
       }
-    }
-
-    label:hover {
-      border-bottom-color: $color-btn-hover;
-    }
-
-    input[type="radio"] {
-      display: none;
-    }
-
-    input[type="radio"]:checked + label {
-      cursor: default;
-      color: $color-text-blu;
-      border-bottom-color: $color-btn;
-    }
-    .container-kitchen__menu {
-      display: none;
-      width: 100%;
-      //------------------------------input tabs (end)
-      margin-top: 50px;
-      .menu__wrap {
+      .menu__list {
+        flex-basis: 48%;
         display: flex;
-        justify-content: space-between;
-        @media all and (min-width: 280px) and (max-width: 1300px) {
-          flex-direction: column;
-        }
-        .menu__list {
-          flex-basis: 48%;
+        flex-direction: column;
+        gap: 20px;
+        .menu__item {
           display: flex;
-          flex-direction: column;
           justify-content: space-between;
           gap: 10px;
-          .menu__item {
+          .menu__img {
+            flex-basis: 50px;
+            img {
+              width: 100%;
+            }
+          }
+          .menu__desc {
+            flex-grow: 1;
             display: flex;
-            justify-content: space-between;
-            gap: 10px;
-            .menu__img {
-              flex-basis: 50px;
-              img {
-                width: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+            .menu__name {
+              display: flex;
+              justify-content: space-between;
+              p {
+                font-family: $font-main-reg;
+                font-size: 22px;
+                color: $color-text-blu;
+                @media all and (min-width: 280px) and (max-width: 1300px) {
+                  font-size: 16px;
+                }
+              }
+              .menu__line {
+                flex-grow: 1;
+                border-bottom: 0.5px dashed $color-text-grey;
+                height: 16px;
+              }
+              .menu__price {
+                font-family: $font-main-light;
+                font-size: 22px;
+                color: $color-bg;
+                margin-left: 10px;
+                @media all and (min-width: 280px) and (max-width: 1300px) {
+                  font-size: 16px;
+                }
               }
             }
-            .menu__desc {
-              flex-grow: 1;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-around;
-              .menu__name {
-                display: flex;
-                justify-content: space-between;
-                p {
-                  font-family: $font-main-reg;
-                  font-size: 16px;
-                  color: $color-text-blu;
-                }
-                .menu__line {
-                  flex-grow: 1;
-                  border-bottom: 0.5px dashed $color-text-grey;
-                  height: 16px;
-                }
-                .menu__price {
-                  font-family: $font-main-light;
-                  font-size: 16px;
-                  color: $color-bg;
-                  margin-left: 10px;
-                }
-              }
-              .menu__comment {
-                font-family: $font-footer;
+            .menu__comment {
+              font-family: $font-footer;
+              font-size: 16px;
+              color: $color-text-grey;
+              @media all and (min-width: 280px) and (max-width: 1300px) {
                 font-size: 12px;
-                color: $color-text-grey;
               }
             }
           }
@@ -782,7 +800,6 @@ body {
 //--------------------------------------------------------Comments
 .container-comment {
   width: 100%;
-  // height: 60vh;
   padding: 8vh 12vw;
   @media all and (min-width: 280px) and (max-width: 1000px) {
     padding: 8vh 5vw;
@@ -791,6 +808,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     @media all and (min-width: 761px) and (max-width: 1023px) {
       gap: 30px;
     }
@@ -898,6 +916,7 @@ body {
     margin: 40px 0;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     @media all and (min-width: 280px) and (max-width: 800px) {
       padding: 5vh 5vw;
       flex-direction: column;
@@ -967,7 +986,7 @@ body {
 
 /*---------------------------Map------------------------------------*/
 .container-map {
-  width: 100vw;
+  width: 100%;
   height: 70vh;
   iframe {
     width: 100%;

@@ -81,6 +81,7 @@ $width-arrow: 8px;
 
 @mixin title-h2($color) {
   font-family: $font-main-reg;
-  font-size: 26px;
+  font-size: 34px;
+  line-height: 140%;
   color: $color;
 }
